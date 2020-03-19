@@ -1,0 +1,22 @@
+EXPeriment     = CERN-NA-28
+REACtion       = muon Cu --> muon X
+Plab           = 280 GeV
+Collaboration  = EMC
+Author         = Ashman et al.
+REFerence      = Phys. Lett. 202B (1988) 603
+Additional info: The ratio of the structure function for copper to deuterium
+                 as measured by the EMC collaboration using a 280 GeV muon beam.
+
+
+      x          Q**2         F2(CU)/F2(D)       errors
+               (GeV**2)                      stat.      sys.
+
+    0.031         4.4            0.940       0.026      0.023
+    0.050         8.4            0.963       0.021      0.020
+    0.079        13.5            0.997       0.017      0.019
+    0.123        17.9            1.042       0.019      0.019
+    0.173        21.1            1.018       0.023      0.019
+    0.244        24.4            1.038       0.021      0.020
+    0.342        29.5            0.945       0.029      0.018
+    0.443        34.0            0.957       0.046      0.019
+    0.573        40.4            0.897       0.061      0.018

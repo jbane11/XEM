@@ -1,0 +1,53 @@
+ macro plot_e139
+   
+   ve/del *
+   
+   a=[1]
+   
+   ve/read x,he4,ehe4,be,ebe,c12,ec12,al,eal,ca,eca,fe,efe,ag,eag,au,eau slac_e139_data.dat ! ! -/**/
+   
+   np = $vlen(x,1)
+   ve/create ex([np])
+   
+   
+   set pmci 1
+   set hcol 1
+   
+   mtyp=5
+   size=0.25
+   
+   if [a]=4 then
+     graph/hplot/err x he4 ex ehe4 [np] [mtyp] [size] s
+   endif
+   
+   if [a]=9 then
+     graph/hplot/err x be ex ebe [np] [mtyp] [size] s
+   endif
+   
+   if [a]=12 then
+     graph/hplot/err x c12 ex ec12 [np] [mtyp] [size] s
+   endif
+   
+   if [a]=27 then
+     graph/hplot/err x al ex eal [np] [mtyp] [size] s
+   endif
+   
+   if [a]=40 then
+     graph/hplot/err x ca ex eca [np] [mtyp] [size] s
+   endif
+   
+   if [a]=56 then
+     graph/hplot/err x fe ex efe [np] [mtyp] [size] s
+   endif
+   
+   if [a]=108 then
+     graph/hplot/err x ag ex eag [np] [mtyp] [size] s
+   endif
+   
+   if [a]=197 then
+     graph/hplot/err x au ex eau [np] [mtyp] [size] s
+   endif
+
+
+   
+   

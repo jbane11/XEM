@@ -1,0 +1,80 @@
+set term post enhanced color font "Helvetica, 24"
+set mxtics 5
+set mytics 5
+set pointsize 2
+FIT_LIMIT=1e-15
+set fit errorvariables
+set size ratio .75
+set lmargin 2
+set rmargin 0
+set rmargin 0.5
+
+unset bars
+srcemc(x)=src_fac*(x-1)+offset
+srcemc2(x)=src_fac2*x
+#set yrange [-.1:.5]
+###############################################################################
+#
+#
+#want EMC vs SRC, raw --> no CM, no scaling
+#
+#######################################################################################
+#raw data, ALL
+#
+#I think this has no CM correction, and no ISO
+set ylabel "|dR_{EMC}/dx|" offset 2,0 font "Helvetica, 24"
+set xlabel "a_{2}" font "Helvetica, 24"
+
+set key top left Left
+
+src_fac         = 0.101181        
+offset          = -0.050785        
+
+
+
+set term post enhanced color  font "Helvetica, 22"
+set output "plotfit_all_norescaling_nocm_rean_final.eps"
+unset label
+#set label "All SRC, no ISO, no CM" at 2.5, 0.1 font "Helvetica, 26"
+
+#set label free at 1, -0.05 font "Helvetica, 24"
+#set label beep at 1 ,0.0 font "Helvetica, 24"
+
+#word_m =sprintf("m = %8.4f +/-%8.4f",src_fac, src_fac_err/FIT_STDFIT)
+#word_b =sprintf("b = %8.4f +/-%8.4f",offset, offset_err/FIT_STDFIT)
+
+chisq=0.91
+src_fac=0.1040
+src_fac_err=0.0125
+offset=-0.058681
+offset_err=0.037514
+word =sprintf("{/Symbol c}^2_{/Symbol n}= %6.2f",chisq)
+
+word_m =sprintf("m = %8.4f +/-%8.4f",src_fac, src_fac_err)
+word_b =sprintf("b = %8.4f +/-%8.4f",offset, offset_err)
+
+#set label word_m at -0.5, 0.38
+#set label word_b at -0.5, 0.34
+#set label "HV: No Constraint" at -0.5, 0.46
+#set label word at -0.5,0.42
+
+#set label "(a)" at 3, 0
+
+#set label "^2H" at -0.4, .02 font "Helvetica, 24"
+set label "^3He" at 2.2, 0.045 font "Helvetica, 24"
+set label "^4He" at 3.6, 0.16 font "Helvetica, 24"
+set label "^9Be" at 3.7, .29 font "Helvetica, 24"
+set label "^{12}C" at 4.75, .27 font "Helvetica, 24"
+set label "^{27}Al" at 5.4, .3 font "Helvetica, 24"
+set label "^{56}Fe" at 4.1, .42 font "Helvetica, 24"
+set label "^{197}Au" at 4.96 , .44 font "Helvetica, 24"
+
+
+
+ax=1
+ay=srcemc(1)
+
+plot [0.5:6][-.1:.5]srcemc(x) lt -1 lw 2 ti "",\
+'srcemc_variations_viso.dat' using ($10!=0 && $1>2  ? ($10):1/0):(abs($2)):($11):3 ti "" with xyerr lt 1 lw 3 lc 3 pt 7, '+' using (ax):(ay) lt 3 pt 6 lw 3 ti ""
+
+

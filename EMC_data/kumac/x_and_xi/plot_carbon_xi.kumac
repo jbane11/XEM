@@ -1,0 +1,88 @@
+ macro plot_he4
+   exe ~/hallc#setup
+   set *fon 66
+   set csiz 0.4
+   
+   ve/del *
+   
+   mp=0.938272013
+   
+*  XEM
+   ve/read ax,axi,aq2,aw2,arat,astat,asys,aiso,acc xem_carbon.dat ! ! -/**/
+   npa=$vlen(ax,1)
+   npcut=21
+   ve/cr ex(100) r 
+* NMC
+   ve/read bx,bq2,by,brat,bstat,bsys nmc_c.dat ! ! -/**/
+   npb=$vlen(bx,1)
+   sigma bxi=2.*bx/(1.0+sqrt(1.0+4.0*bx**2*[mp]**2/bq2))
+* SLAC E139
+   ve/read cx,cq2,ceps,crat,cstat slac_e139_carbon_q2_5.dat ! ! -/*/
+   npc=$vlen(cx,1)
+   sigma cxi=2.*cx/(1.0+sqrt(1.0+4.0*cx**2*[mp]**2/cq2))
+   
+* HERMES N14
+   ve/read dx,dQ2,drat,dstat,dsys hermes_nitrogen.dat ! ! -/*/
+   npd=$vlen(dx,1)
+   sigma dxi=2.*dx/(1.0+sqrt(1.0+4.0*dx**2*[mp]**2/dq2))
+   
+   sigma atot=sqrt(astat**2+asys**2)
+   
+   sigma btot=sqrt(bstat**2+bsys**2)
+   
+   sigma dtot=sqrt(dstat**2+dsys**2)
+   
+   null -0.01 1.0 0.7 1.3
+   
+   set pmci 4
+   set hcol 4
+   hplot/err axi(1:[npcut]) arat(1:[npcut]) ex(1:[npcut]) atot(1:[npcut]) [npa] 20 0.2 1
+   hplot/err axi([npcut]:[npa]) arat([npcut]:[npa]) ex([npcut]:[npa]) atot([npcut]:[npa]) [npa] 24 0.2 1
+   
+   set pmci 1
+   set hcol 1
+   hplot/err bxi brat ex btot [npb] 25 0.2 1
+   
+   set pmci 2
+   set hcol 2
+   hplot/err cxi crat ex cstat [npc] 22 0.2 1
+   
+   set pmci 3
+   set hcol 3
+   hplot/err dxi drat ex dtot [npd] 27 0.3 1
+   
+   atit '[x]' '[s]?A! / [s]?D!' ! 220
+   
+   set hcol 1
+   fun/plo slac_c12_fit.f 0 1 s,
+   
+   set pmci 1
+   ve/cr x(1) r 0.1
+   ve/cr y(1) r 0.85
+   ve/cr ey(1) r 0.004
+   key 0.15 0.85 25 'NMC' 
+ 
+   set pmci 2
+   key 0.15 0.8 22 'SLAC E139'
+   
+   set pmci 4
+   key 0.15 0.75 20 'JLab E03103'
+   
+   set pmci 3
+   key 0.5 0.75 27 'HERMES (N)'
+   
+   itx 0.2 1.2 'C (N)'
+   
+   
+   set ltyp 2
+   line 0 1 1 1
+   
+* Norm errors:
+* NMC = 0.4% 
+* JLab = 1.6%
+* SLAC = 2.2 + 1 = 1.22
+* HERMES = ?? 1.4% from Lumi, but renormalized by 0.9%
+   
+   pic/print carbon_xi.eps
+   
+   

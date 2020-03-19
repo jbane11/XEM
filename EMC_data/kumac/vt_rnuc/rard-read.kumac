@@ -1,0 +1,57 @@
+macro read
+*
+ve/create xfe(10)
+ve/create qfe(10)
+ve/create fe(10)
+ve/create errfe(10)
+*
+ve/create xau(1)
+ve/create qau(1)
+ve/create au(1)
+ve/create errau(1)
+*
+ve/create xca(6)
+ve/create qca(6)
+ve/create ca(6)
+ve/create errca(6)
+*
+ve/create xc(9)
+ve/create qc(9)
+ve/create c(9)
+ve/create errc(9)
+*
+ve/create xsn(13)
+ve/create qsn(13)
+ve/create sn(13)
+ve/create errsn(13)
+*
+*
+ve/read xfe ra-rd.txt ! 'o'
+ve/read qfe ra-rd.txt ! ' '
+ve/read fe ra-rd.txt ! ' '
+ve/read errfe ra-rd.txt ! ' '
+ve/read xau ra-rd.txt ! ' '
+ve/read qau ra-rd.txt ! ' '
+ve/read au ra-rd.txt ! ' '
+ve/read errau ra-rd.txt ! ' '
+ve/read xca ra-rd.txt ! ' '
+ve/read qca ra-rd.txt ! ' '
+ve/read ca ra-rd.txt ! ' '
+ve/read errca ra-rd.txt ! ' '
+ve/read xc ra-rd.txt ! ' '
+ve/read qc ra-rd.txt ! ' '
+ve/read c ra-rd.txt ! ' '
+ve/read errc ra-rd.txt ! ' '
+ve/read xsn ra-rd.txt ! ' '
+ve/read qsn ra-rd.txt ! ' '
+ve/read sn ra-rd.txt ! ' '
+ve/read errsn ra-rd.txt ! 'c'
+*
+return
+************************************************************************
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+ macro plot_he4
+   exe ~/hallc#setup
+   set *fon 66
+   set csiz 0.4
+   
+   ve/del *
+   
+*  XEM
+   ve/read ax,axi,aq2,aw2,arat,astat,asys,aiso,acc xem_he4.dat ! ! -/**/
+   npa=$vlen(ax,1)
+   npcut=21
+   ve/cr ex(100) r 
+* NMC
+   ve/read bx,bq2,by,brat,bstat,bsys nmc_he4.dat ! ! -/**/
+   npc=$vlen(bx,1)
+* SLAC E139
+   ve/read cx,crat,cstat slac_e139_he4.dat ! ! -/**/
+   npc=$vlen(cx,1)
+   
+   sigma atot=sqrt(astat**2+asys**2)
+   
+   sigma btot=sqrt(bstat**2+bsys**2)
+   
+   null -0.01 1.0 0.7 1.3
+   
+   set pmci 4
+   set hcol 4
+   hplot/err ax(1:[npcut]) arat(1:[npcut]) ex(1:[npcut]) atot(1:[npcut]) [npa] 20 0.2 1
+   hplot/err ax([npcut]:[npa]) arat([npcut]:[npa]) ex([npcut]:[npa]) atot([npcut]:[npa]) [npa] 24 0.2 1
+   
+   set pmci 1
+   set hcol 1
+   hplot/err bx brat ex btot [npa] 25 0.2 1
+   
+   set pmci 2
+   set hcol 2
+   hplot/err cx crat ex cstat [npa] 22 0.2 1
+   
+   atit 'x' '[s]?A! / [s]?D!' ! 220
+   
+   set pmci 1
+   ve/cr x(1) r 0.1
+   ve/cr y(1) r 0.85
+   ve/cr ey(1) r 0.004
+   key 0.15 0.85 25 'NMC' 
+ 
+   set pmci 2
+   key 0.15 0.8 22 'SLAC E139'
+   
+   set pmci 4
+   key 0.15 0.75 20 'JLab E03103'
+   
+   itx 0.2 1.2 '^4!He'
+   
+   
+   set ltyp 2
+   line 0 1 1 1
+   
+* Norm errors:
+* NMC = 0.4% 
+* JLab = 1.5%
+*  SLAC = 2.2 + 1 = 2.42
+   
+   pic/print he4.eps
+   
+   

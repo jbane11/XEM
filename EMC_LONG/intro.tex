@@ -1,0 +1,632 @@
+\section{Introduction} \label{intro.sec}
+
+Quantum chromodynamics (QCD) is the theory governing the strong interaction,
+with quarks and gluons as elementary degrees of freedom. The interaction
+between quarks is mediated by gluons as the gauge bosons. Understanding QCD in
+terms of the elementary quark and gluon degrees of freedom remains the
+greatest unsolved problem of strong interaction physics. The challenge
+arises from the fact that quarks and gluons cannot be examined in isolation.
+The degrees of freedom observed in nature (hadrons and nuclei) are different
+from the ones typically used in the QCD formalism (quarks and gluons).
+However, detailed studies of the structure of hadrons, mainly protons and
+neutrons, provide a wealth of information on the nature of QCD. Thus, one of
+the main goals of the strong interaction physics is to understand how the
+fundamental quark and gluon degree of freedom give rise to the nucleons and to
+inter-nucleon forces that bind nuclei.
+ 
+
+The investigation of deep-inelastic scattering of leptons off the nucleon is
+one of the most effective ways for obtaining fundamental information on the
+quark-gluon substructure of the nucleon. Nuclear structure functions probe the
+impact of the nucleon binding and motion in the nucleus, as well as possible
+modification to the structure of a nucleon in the nuclear medium. Measurements
+by the European Muon Collaboration~\cite{aubert83} showed the unexpected
+result that the nuclear structure function differed significantly from the
+sum of proton and neutron distributions.  This observation was dubbed the
+`EMC effect', and is still the focus of experimental and theoretical efforts
+to understand the origin of these differences in detail.  We decribe here
+an experiment where electrons were scattered off from proton and several other
+nuclear targets to better understand the possible modification of hadron
+properties in the nuclear environment, with a focus on light nuclear targets.
+
+This article is structured as follows. In the next section we briefly
+discuss electron scattering, structure functions and introduce the
+kinematics. In section~\ref{intro.sec} we discuss the EMC effect and do a short
+survey of the findings of earlier experimental and theoretical investigations
+and briefly discuss the physics motivation behind the present
+experiment. Section~\ref{apparatus.sec} gives an overview of the experimental
+apparatus used to collect the presented data. Section~\ref{anal.sec} describes
+the data analysis procedures and section~\ref{syst.sec} discusses the details
+of the systematic uncertainties. The final results are presented in
+section~\ref{results.sec} with conclusions and an overview of the results
+given in section~\ref{concl.sec}.
+
+
+
+\subsection{Kinematics and definitions} \label{kinem.ssec}
+
+Consider electron scattering off a stationary target nucleon through the
+exchange of a single virtual photon,
+%
+\begin{equation}
+e^{-}(k) + N(P) \longrightarrow e^{-}(k^{'}) + X ~,
+\end{equation}
+%
+where $k$ and $k^{'}$ are the four momenta of the initial and scattered
+electrons and $P$ is the four momentum of the target nucleon. The four
+momentum of the incoming electron is $k= ( E, \overrightarrow k ) $ and of the
+scattered electron is $k= ( E^{'}, \overrightarrow {k ^{'}}) $. Since the target
+is at rest in the laboratory frame its four momentum is $P = ( M,
+\overrightarrow 0 ) $ where $M$ is the nucleon rest mass. Experimentally, the
+produced hadrons $X$ are not detected in inclusive scattering of electrons
+with a fixed energy, $E$. Only the scattered electron energy $E^{'}$ and the
+scattering angle $\theta$ relative to the incident beam. The scattering
+process takes place through the electromagnetic interaction by the exchange of
+a virtual photon $\gamma^{*}$, with energy, $\nu=E - E^{'}$ and momentum
+$\overrightarrow q$. In the laboratory frame and ignoring the electron mass,
+one can express the negative of four momentum transfer square of the
+virtual photon exchanged in the scattering process as
+$Q^2=4EE^{'}\sin^2\left( \theta/2\right) $ and the invariant mass of the
+final hadronic system as $W=\sqrt{M^2+2M\nu - Q^2}$. The Bjorken scaling
+variable, $x=Q^2/2M\nu$, represents the longitudinal momentum fraction of the
+hadron carried by the interacting parton in the infinite momentum frame. For
+electron scattering from a free nucleon, $x$ ranges from 0 to 1. For scattering
+from a nucleus of mass number $A$, the $x$ range goes from 0 to
+$M_A/M \approx A$.
+
+In terms of the deep-inelastic structure functions $F_1(x,Q^2)$
+and $F_2(x,Q^2)$, the differential cross section for scattering of an
+unpolarized electron in the laboratory frame can be written as
+%
+\begin{eqnarray} \nonumber \label{xsec_eqn}
+\frac{d^2\sigma}{d\Omega dE^{'}} &=& \frac{4\alpha^2E^{'2}}{Q^4} \cos^2(\theta/2) \big[ F_2(x,Q^2)/\nu \\
+&&+ 2\tan^2(\theta/2) F_1(x,Q^2)/M \big] ~,
+\end{eqnarray}
+%
+where $\alpha$ is the fine structure constant. For
+brevity, this doubly differential cross section is denoted by the symbol
+$\sigma$. When $Q^2$ and $\nu \rightarrow \infty$, the structure functions
+will only depend on the ratio $Q^2/\nu$ or equivalently on the variable $x$
+\cite{bjorken_scaling}. Thus, in this scaling region the structure functions
+are simply a function $x$. In the quark parton model (QPM), this scaling
+behavior is due to the elastic scattering of the quarks inside the nucleon. In
+this model, the structure function $F_2$ is given by
+%
+\begin{eqnarray} \label{qpmf2_eqn}
+ F_2(x)= \sum_f e_f^2 x q_f(x) ~.
+\end{eqnarray}
+%
+where the distribution function $q_f(x)$ is the expectation value of the
+number of partons of flavor $f$ (up, down, strange...) in the hadron, whose
+longitudinal momentum fraction lies within the interval $[x, x+dx]$ and $e_f$
+is the charge of the parton, in units of electron charge.
+
+Experimentally this scaling is not exact.  In the region of deep-inelastic
+scattering (DIS), the structure functions do not scale exactly, and instead
+depend logarithmically on $Q^2$.  This is a consequence of QCD, in which the
+parton distribution functions (pdfs) are not scale independent, but evolve
+with $Q^2$.  So the logarithmic scaling violations associated with QCD
+do not break down the connection between the structure function and the
+underlying pdfs, but simply reflect the scale-dependence of the pdfs.
+
+Along with the $Q^2$ dependence associated with QCD, additional power
+corrections appear at lower $Q^2$ values, mainly at large $x$.  So-called
+"target mass corrections"~\cite{Schienbein_tarmass_rev} yield deviations from
+scaling at finite $Q^2$ values arising from terms neglected in the high-$Q^2$
+approximations used in the ideal scaling limit.  In addition, higher-twist
+effects, associated with breakdown of the assumption of incoherent elastic
+scattering from individual quarks at lower $Q^2$, also modify the scaling
+behavior.  This is most clearly manifested in the appearance of clear
+structures in the inclusive structure function associated with production of
+individual resonances.
+
+Analogous to the absorption cross section for real photons, the $ F_1$ and $
+F_2$ structure functions can be expressed in terms of longitudinal
+($\sigma_L$) and transverse ($\sigma_T$) virtual-photon cross sections
+%
+\begin{equation}\label{rosenrxsec_eqn}
+ \frac{d^2\sigma}{d\Omega dE^{'}} =
+\Gamma \left[ \sigma_T \left( x, Q^2\right) +
+\epsilon \, \sigma_L \left( x, Q^2\right) \right]~,
+\end{equation}
+%
+where $\epsilon =\Gamma_L/\Gamma_T= \big[1+2~(1+Q^2/4M^2x^2)
+\tan^2\frac{\theta}2\big] ^{-1}$ is the virtual polarization parameter,
+$\Gamma$ is the virtual photon flux, and $\Gamma_L$ and $\Gamma_T$ defines the
+probability that a lepton emits a longitudinally or transversely polarized
+virtual photon.
+
+
+The ratio of longitudinal to transverse virtual-photon absorption cross
+section is given by
+%
+\begin{eqnarray} \label{r_eqn}
+R(x,Q^2) = \frac{\sigma_L}{\sigma_T} = \left[ \left(1+\frac{\nu^2}{Q^2} \right)
+\frac{M}{\nu} \frac{F_2(x,Q^2) }{F_1(x,Q^2) }\right]-1 ~.
+\end{eqnarray}
+%
+Using equations~\ref{xsec_eqn} and~\ref{r_eqn}, the per-nucleon cross section
+(cross section divided by the total nucleon number) ratios for two different
+nuclei $A_1$ and $A_2$ can be written as
+%
+\begin{eqnarray} 
+\frac{\sigma_{A_1}}{\sigma_{A_2}} =
+\frac{F_2^{A_1}\, (1+\epsilon \, R_ {A_1}) \, (1+ R_ {A_2}) }
+     {F_2^{A_2}\, (1+\epsilon \, R_ {A_2}) \, (1+ R_ {A_1}) }~. 
+\end{eqnarray}
+%
+Note that when $\epsilon =1$ or $R_{A_1} =R_{A_2}$, the ratio of the $F_2$
+structure functions is identical to the cross section ratio.
+
+%In that case
+%%
+%\begin{eqnarray} 
+%\frac{\sigma_{A_1}}{ \sigma_{A_2}} = \frac{F_2^{A_1}}{F_2^{A_2}} ~. 
+%\end{eqnarray}
+%%
+%In other words if $\epsilon=1$ or $R_{A_1} =R_{A_2}$, then the nuclear
+%dependence of the structure function at a given kinematics is directly related
+%to the ratio of cross sections measured at the same kinematics.
+
+In this and all previous extractions of the EMC effect, it is assumed that $R$
+is target independent, and therefore the cross section ratios correspond to the
+$F_2$ structure function ratios.  Because the structure functions depend
+on $Q^2$, this ratio may also have a $Q^2$ dependence which we must account
+for in comparing our data to measurements at other different $Q^2$ values.
+However, the effect of QCD evolution on the ratios should be essentially
+negligible as the evolution is nearly identical for all nuclei, and so cancels
+in the ratio.  The only significant contribution to the ratio from target mass
+corrections corresponds to a simple change of variables from Bjorken-$x$ to
+Nachtmann-$\xi$ when comparing measurements at different $Q^2$
+(Sec.~\ref{hixcor.ssec}).  Thus, in kinematics where any remaining higher-twist
+contributions are small or $A$ independent, the comparison of EMC ratios from
+experiments at different $Q^2$ values is straightforward. Accounting for this
+change of variables mentioned above, it has been shown that the EMC ratios are
+independent of $Q^2$ down to very low values of $Q^2$ and $W^2$, well below
+the typically-defined DIS regime~\cite{Arrington:2003nt, niculescu06}.
+
+
+\subsection{EMC effect}\label{emc.ssec}
+
+Nuclei consist of protons and neutrons bound together by the strong nuclear
+force, with binding energies of 1--2\% of the nucleon mass, and characteristic
+momenta below 200--300 MeV/c. Because DIS involves incoherent scattering from
+the quarks, and the energy and momentum scales associated with nuclear binding
+are small compared to the external scales in DIS, the naive assumption was
+that the nuclear structure function in high-energy scattering from a nucleus
+with $Z$ protons and $N$ neutrons would simply be the sum of the proton and
+neutron structure functions:
+%
+\begin{equation} \label{f2asimple1_eqn}
+F^A_2(x,Q^2) = Z F^{p}_2(x,Q^2) + N F^{n}_2(x,Q^2) ~.
+\end{equation}
+
+%%
+%or in terms of the parton distribution functions in the QPM,
+%%
+%\begin{equation} \label{f2asimple2_eqn}
+%q^A_f (x,Q^2) =\frac{Z}{A}q^{p}_f(x,Q^2) + \frac{(A-Z)}Aq^{n}_f(x,Q^2) ~.
+%\end{equation}
+%%
+%Here, $F^{p}_2(x,Q^2)$ and $F^{n}_2(x,Q^2)$ are nucleon structure functions
+%and $q^{n}_f(x,Q^2)$ and $q^{n}_f(x,Q^2)$ represent the quark, anti-quark
+%and gluon densities in the nucleons.
+
+While the typical scale of the Fermi momentum is small compared
+to the momentum scale of the probe, the longitudinal component is directly
+added to the momentum of the virtual photon and cannot be completely 
+neglected. It is necessary to perform a convolution of the pdfs of the proton
+and neutron with the momentum distribution of the nucleons in the
+nucleus~\cite{Akulinichev:1985xq}:
+%
+\begin{equation}\label{conv_eqn}
+F_2^A(x)=\int_{x}^A dz\, f_{N}^A(z,\epsilon) F_2^{N}\left(\frac{x}{z}\right) ~,
+\end{equation}
+%
+where the longitudinal momentum distribution function $f_{N}^A(z,\epsilon)$
+for the nucleon is given by,
+%
+\begin{equation}\label{conv2_eqn}
+f_{N}^A(z,\epsilon)=
+\int d^{4}p~S_N(p)~\delta\left(z-\left(\frac{pq}{M_N q_{0}}\right) \right) ~.
+\end{equation}
+%
+Here, $S_N(p)$ is the spectral function of the nucleus (here assumed to be
+identical for protons and neutrons), $z$ is the light-cone
+momentum carried by the nucleon and $\epsilon$ its removal energy. The
+four-momenta of the struck nucleon and virtual photon are given by $p$
+and $q$, where $q_{0}$ is the energy transferred by the virtual photon. One
+can think of the convolution as ``smearing'' the nucleon pdf in $x$, yielding
+little change where the pdf is relatively flat in $x$, and larger effects
+where it grows or falls rapidly. Calculations showed that the effect was
+minimal at low $x$ values, but that the convolution has a large impact for $x
+\gtorder 0.6$, where the pdf of the nucleon falls rapidly~\cite{bodek81a,
+bodek81b, frankfurt81}.
+
+
+Therefore, it came as a surprise when this expectation was shown to be
+incorrect by measurements which showed significant effects on the nuclear
+pdf for nearly all values of $x$~\cite{aubert83}. As part of a
+comprehensive study of muon scattering, the European Muon Collaboration
+compared data from iron with data from deuterium by forming a per-nucleon
+structure function ratio of these targets. Since the $x$ distributions of up
+and down quarks differ, yielding different structure functions for the
+proton and neutron, EMC ratios are usually taken as a ratio of a heavy
+isoscalar target to deuterium. This cancels out the contribution due to
+the difference between the proton and neutron structure function but
+yields a ratio which depends on the nuclear effects in both the heavy
+nucleus and the deuteron. For non-isoscalar nuclei, a correction is typically
+applied to estimate the effect of the neutron excess in heavy nuclei. Note
+that many calculations provide the ratio of the heavy nucleus to the sum of
+free proton and neutron structure functions. This provides a more direct
+measure of the nuclear effects in the nucleus, but cannot directly be compared
+to the data, as the lack of a free neutron target makes direct measurements of
+the free neutron structure function impossible.
+
+
+When plotted as a function of $x$, the EMC ratio shows significant deviation
+from unity. The deviation of this ratio from unity was unexpected, and, this
+target-mass number dependence in deep-inelastic scattering is known as the
+EMC effect. This discovery had a significant impact on our views of the
+structure of nuclei, and has spurred discussion of the importance of the
+concepts of quarks, gluons and QCD to nuclear physics.
+
+
+Though the boundaries are somewhat arbitrary, generally the $x$ dependence of
+the cross section ratios are divided into four regions in $x$. The gross
+features of the data are; the region $x<0.1$, where the nuclear cross sections
+are suppressed (known as the shadowing region); the region $0.1<x<0.3$, where
+the nuclear cross sections are slightly enhanced compared to nucleon cross
+sections (anti-shadowing region); the region $0.3<x<0.7$, where a large
+suppression of the nuclear cross section is observed (``EMC effect'' region),
+and the region $x>0.7$ where the EMC ratio increases and grows beyond unity
+due to the convolution ("Fermi smearing") effects.
+
+
+\subsection{Previous measurements of the EMC effect}\label{prevexpt.ssec}
+
+After the initial observation of an unexpected nuclear dependence in the
+structure functions of heavy nuclei~\cite{aubert83}, measurements were
+performed at both CERN~\cite{cern_na2prime1, cern_na2prime2, cern_bcdms1} and
+SLAC \cite{slace49b,slace61,slace87,slace139}. Further measurements by the EMC
+collaboration~\cite{aubert86} and New Muon Collaboration
+()~\cite{Arneodo:1995cs,Amaudruz:1995tq} significantly improved the
+precision and kinematic range of measurements at low $x$, mapping out in
+detail the shadowing region for a range of nuclei. The HERMES collaboration
+also measured DIS cross sections on several nuclear targets including
+$^3$He~\cite{hermes_ackerstaff,hermes_correction_airapetian}. The data
+in the anti-shadowing region are consistent with unity, while data at
+higher $x$ have large uncertainties.
+
+Focusing on the high-$x$ region, SLAC experiment E139~\cite{slace139}
+mapped out the EMC effect for $^4$He, Be, C, Al, Ca, Fe,
+Ag, and Au in the range $0.09<x<0.9$ and $2<Q^2<15$~GeV$^2$. Examining
+the target ratios, and in particular their deviations from unity,
+the experiment showed no significant $Q^2$ dependence and an identical $x$
+dependence for all nuclei, although the high-$x$ behavior of $^4$He appeared
+to differ, but not in a significant fashion given its large uncertainties.
+The $A$-dependence of the nuclear effects could be parameterized several
+different ways: varying logrithmically with A, linearly with A$^{-1/3}$,
+or being proportional to the average nuclear density (assuming a uniform
+sphere based on the measured nuclear charge radius). It common to assume that
+the EMC effect scales as A$^{-1/3}$~\cite{arrington12c}, based on the local
+density approximation~\cite{antonov86}, and this has been used to provide an
+extrapolation of the EMC effect to infinite nuclear matter~\cite{sick92}.
+
+
+The universal $x$ dependence and weak A dependence for heavy nuclei makes
+it difficult to evaluate models of the EMC effect~\cite{geesaman95,
+Norton_emcreview, sargsian03}.  In addition, the EMC effect at very large $x$
+values had not been well measured. The typical DIS requirement, $W^2 >
+4$~GeV$^2$, yields extremely high $Q^2$ measurements for $x \gtorder 0.8$,
+where the cross sections are extremely small. However, recent extraction of
+EMC ratios from JLab experiment E89-008 in the resonance region
+($1.2<W^2<3.0$~GeV$^2$ with $Q^2 = 3$--4 GeV$^2$) demonstrated that the
+nuclear effects in the resonance region and DIS region are
+identical~\cite{Arrington:2003nt}. This implies that relaxing the constraint
+on $W^2$ may allow for measurements at larger $x$ values than previously
+accessed.  Precise measurements at large $x$ allow for tests of the
+convolution model where other effects are expected to be small, providing a
+constraint on the convolution effects which must be accounted for at all $x$
+values.
+
+
+\subsection{Theoretical models}\label{theory.ssec}
+
+Even though it has been three decades since the discovery of the EMC effect,
+and there are extensive data on its $x$ and $A$ dependence for $A \ge 12$,
+there is no clear consensus as to its origin. The EMC effect has been under
+intense theoretical and experimental study since the original observation (see
+the reviews~\cite{geesaman95, Norton_emcreview, sargsian03} and references
+therein). The formalisms used to explain the observed effect ranges from
+traditional nuclear descriptions in terms of pion exchange or binding energy
+shifts, to QCD inspired models such as dynamical rescaling, multi-quark
+clustering and de-confinement in nuclei, some of which involve changes to
+the nucleon's internal structure when in the dense nuclear medium.
+
+
+%convolution models
+
+Traditional calculations begin with the convolution model, where the nucleon
+motion and binding modify the effective $x$ and $Q^2$ values of the e--N
+interaction, such that the virtual photon probes a modified quark
+distribution compared to the stationary nucleons.  While the nucleus is built
+from several constituents, it is common to consider only the contribution from
+the nucleons as part of the 'conventional', and treat contributions from pions
+and more exotic constituents such as virtual $\Delta$s, modified nucleons, or
+hidden color configurations as additional contributions.
+
+Akulinichev~\etal~\cite{Akulinichev:1985ij, Akulinichev:1985xq} included the
+mean nucleon removal energy in their calculations in addition to the simple
+binding and Fermi motion. They found that the experimental results can be
+reproduced by inclusion of the average one-nucleon separation energy, but
+their approach has been criticized for having incorrect normalization of
+the spectral function~\cite{Frankfurt:1985ui}.
+
+\textit{JRA: is "improper normalization of S(p)" the same as
+failing to satisfy the momentum sum rule?}
+
+\textit{JRA: Kulagin and Petti as more recent convolution approach
+(presumably better than the 1985 versions, e.g. if they do convolution for
+full 3D momentum distribution).  Includes removal energy based on single
+particle separation energy, which accounts for roughly half of the observed
+suppression of the high-$x$ nuclear structure function ratio.  Again, this
+convolution yields a violation of the momentum sum rule.  In their analysis,
+this is fixed by inclusion of an enhance pion field, although there are
+several assumptions that go into this.}
+
+...However, the contributions from nuclear pions are only significant at
+low $x$, as they carry a momentum fraction of $m_{\pi}/m$ of the momentum of a
+nucleon in the infinite momentum frame.  Thus, the structure functions
+for $x>0.3$ should not be sensitive to the details of the nuclear pions (at
+least not directly, pion model important in their extraction of off-shell
+effects).
+
+Another such calculation is by Benhar~\etal~\cite{benhar_emccalcnucmatt}.
+Their binding-only contributions agrees with existing world data for the
+medium heavy nuclei large $x$ values but undershoots the data at small $x$
+values. The agreement is improved when they include the contributions of
+``nuclear pions''. Another calculation by Marco~\etal~\cite{Marco_dis:1995}
+uses realistic nucleon spectral functions and meson nucleus self energies to
+get the size of the EMC effect outside of shadowing region. Their
+calculations incorporate Fermi motion, binding, and pionic effects and uses an
+interacting Fermi sea and the local density approximation to scale the results
+from nuclear matter to finite nuclei. Here, also a better agreement with data
+is reached when they use both nucleonic and mesonic (pions and rhos)
+contributions as opposed to the nucleonic contribution alone.
+
+%improved version of Marco's calculation~\cite{SajjadAthar:2009cr})}
+
+\textit{JRA: The paragraph above was moved here from following section; may
+need to be worked in better and have more (or less?) detail.}
+
+\textit{JRA: need at least brief comment about Miller/Smith work which
+claims that binding can't explain the EMC effect, but in a LC convolution
+calculation with no binding (IIRC).}
+
+
+Some calculations include more than just pions and nucleons.  A recent work
+accounts for some of the deficit in the momentum-sum rule for the nucleons by
+a modification to the Coulomb field of the
+nucleus~\cite{Frankfurt_photon_pdf2010, Frankfurt:2012qs}.  If one is starting
+from a convolution model which uses the separation energy, rather than the
+average binding energy per nucleon, accounting for the momentum in the Coulomb
+field simply accounts for loss of momentum from the nucleons; it does not
+yield an additional suppression of the structure function at large $x$.
+However, it would suggest that the modification to the nuclear pion field,
+used to explain the deficit of the momentum sum rule, is overestimated in
+heavy nuclei where the modification of the Coulomb field is more significant.
+These and other works, e.g.~\cite{hen13}, also argue for the importance of
+accounting for the difference between $x$, calculated with the proton mass,
+and $x_A$ calculated with the mass of the nucleus.  This small shift in $x$
+will yield a suppression of the nuclear structure function at large $x$, and
+so this could be removed from the measured EMC effect. However, this effect is
+also accounted for in calculations of the EMC ratios which include the binding
+energy of the nucleus, so there is no need to apply a correction to the data
+for this effect when comparing to such calculations.
+
+
+%Because the pion is composed of a valance quark anti-quark pair, any
+%model with such pion enhancement will naturally lead to an enhancement of
+%anti-quarks at low $x$. In general, pion models describe the experimental data
+%fairly well from $0.2<x<0.8$ but are less successful in explaining Drell-Yan
+%data~\cite{Alde_DY_E772:1990}. These models~\cite{berger} predict a strong
+%enhancement of the anti-quark distribution, which is not seen in the data.
+%
+%%JRA \textit{JRA: Excluded Drell-Yan discussion - more detail than we need, not
+%%JRA sure what it adds to this paper}
+%
+% ...and I think that the berger calculation doesn't account for the pion
+%mass properly (x_pi vs. x_p), so excluding it doesn't say much}.
+%
+% JRA: not sure that mathematical details of the generalized convolution
+% (with pions) is required, and it begs the question about details for 
+% other contributions, modified nucleons, etc....
+%
+%As mentioned previously, since there is nonzero probability of finding other
+%hadrons in the nucleus (pions, deltas, multi-quark clusters \ldots)
+%contribution from these hadron should also be included in the nuclear
+%structure function calculation. Thus, the most general form of the convolution
+%form can be written as:
+%%
+%\begin{equation}\label{conv3_eqn}
+%F_2^A(x)=\sum_{i}{ \int_{x}^A dy~f_{i}^A(y) F_2^{i}\left(\frac{x}{y}\right)} ~.
+%\end{equation}
+%%
+%For example, if we include the contribution from pions also with nucleons,
+%then Eqn.~\ref{conv_eqn} becomes:
+%%
+%\begin{equation}\label{conv4_eqn}
+%F_2^A(x)=\int_{x}^A dz~ f_{N}^A(z) F_2^{N}\left(\frac{x}{z}\right) +
+%\int_{x}^A dy~f_{\pi}^A(y) F_2^{\pi}\left(\frac{x}{y}\right) ~,
+%\end{equation}
+%%
+%where $F_2^{\pi}$ is the pion structure function and $f_{\pi}^A(y)$ is
+%the momentum distribution of pions in nucleus. Pion models often assume that
+%the nucleon structure function is unchanged by the nuclear medium, and the
+%observed modifications in the nuclear structure functions are due to extra
+%pions. Pions contribute at small $x$ values because in QPM they carry a
+%fraction of $m_{\pi}/m$ of the momentum of a nucleon in the infinite momentum
+%frame. This implies that if there are more pions in the bound nucleon compared
+%to the free nucleon, their contribution is more significant in the low $x$
+%region. Because the pion is composed of a valance quark anti-quark pair, any
+%model with such pion enhancement will naturally lead to an enhancement of
+%anti-quarks at low $x$. In general, pion models describe the experimental data
+%fairly well from $0.2<x<0.8$ but are less successful in explaining Drell-Yan
+%data~\cite{Alde_DY_E772:1990}. These models~\cite{berger} predict a strong
+%enhancement of the anti-quark distribution, which is not seen in the data.
+
+
+%Another approach recognizes that, since the nucleus is a dense system, there
+%is a possibility that the valence quarks in the nucleus can form clusters of a
+%color singlet state containing $6,9,12 \ldots$ quarks~\cite{jaffe83}. As in
+%the case of pions, the momentum carried by the six quark cluster changes at
+%the hadronic level. The success of the cluster model relies on the fact that a
+%quark in a 6 or 9 quark bag has the possibility of carrying the momentum of
+%two or three nucleons. Neglecting Fermi motion, the structure function of the
+%nucleon (the conventional picture based on 3 quark state) vanishes for
+%$x\ge1$. On the other hand, for a multi-quark configuration the structure
+%function extends beyond $x=1$~\cite{geesaman95}.
+
+Additional contributions that have been examined are virtual constituents of
+the nucleus which are not present in a nucleon.  In the dense environment of
+a nucleus, one may have color-singlet clusters of 6, 9,... valence
+quarks~\cite{jaffe83, pirner11}.  The pdfs within such clusters can differ
+significantly from the sum of a set of 2 or 3 individual nucleons, just 
+yielding a modification to the nuclear pdf.  \textit{disfavored because
+large contributions required to explain EMC region (?); can be examined
+at larger $x$, as  multi-quark configuration the structure
+function extends beyond $x=1$~\cite{geesaman95, sargsian03, arrington06,
+fomin10}}.  It has also been suggested that hidden-color configurations may
+contribute to the short-distance structure of the nucleus, which again could
+potentially yield a small contribution with a significant modification to the 
+nucleon pdfs.  
+
+%rescaling models
+
+Finally, some calculations invoke a modification to the internal structure
+of individual nucleons within the dense medium of the nucleus.
+Different rescaling models~\cite{close83,Nach_pirner, chanfray:1984} have been
+proposed to explain the EMC effect, based on a change in the nucleon radius
+due to partial deconfinement in the nuclear medium. In terms of QCD, a change
+in confinement means a change in $Q^2$. Thus, QCD evolution starts at lower
+$Q^2$ for a free nucleon, and, hence, the QCD radiative processes per nucleon
+are larger in a bound nucleon than in a free nucleon.
+%
+% JRA: Eqn. was very confusing, and isn't really necessary given the level
+% of discussion
+%%
+%\begin{equation}\label{rescale_eqn}
+%F_2^A\left(x,Q^2\right) \sim F_2^{D}\left(x,\xi_A\left(Q^2\right),Q^2 \right) ~.
+%\end{equation}
+%%
+In this case, scaling is referred to as ``dynamic'' because of the
+evolution of the quark, anti-quark and gluon distributions.
+Close~\etal~\cite{close85} shows that and increase in confinement size could
+explain the data on a medium nucleus such as iron but fail to explain the data
+for $x \gtorder 0.65$, since there is no inclusion of Fermi motion effects.
+
+There are other models involving medium-modified nucleons that do not use
+a rescaling of $Q^2$.  In such models the quark wave function of a nucleon is
+modified by external fields provided by the surrounding nucleons. Quark-meson
+coupling models~\cite{Saito:1994ki} include the effect of the nuclear medium
+by allowing quarks in nucleons to interact via meson exchange and additional
+vector and scalar fields. These models have been applied to the study the EMC
+effect in unpolarized and polarized \cite{Cloet:2005rt, Cloet:2006bq}
+structure functions, as well as other observables for nuclei and nuclear
+matter~\cite{Saito:2005rv}. In addition, calculations for finite
+nuclei~\cite{Cloet:2006bq} show a significant difference between the polarized
+and unpolarized EMC effect. Recent work by Miller and Smith use a Chiral
+soliton model to relate nucleon form factor modification~\cite{Smith:2004dn},
+the EMC effect in polarized~\cite{Smith:2005ra} and
+unpolarized~\cite{Smith:2002ci} structure functions.
+
+%%JRA: \textit{JRA: Excluded isospin dependence; is it relevant enough?
+%%JRA: if so, needs more detail (calcs. vs data), etc...}.
+
+%There have also been suggestions a significant isospin-dependence for the EMC
+%effect~\cite{Cloet:2006bq, hirai07, Dutta:2010pg}. In the model by
+%Cloet~\etal, a neutron or proton excess in nuclei generates an isovector mean
+%field which, through its coupling to the quarks in a bound nucleon, creates a
+%shift in the quark distributions. The isospin dependence of the interaction
+%leads to different degree of modification for the up and down quark
+%distributions, yielding a difference in the EMC effect for these nuclei.
+
+The initial results from our EMC ratios on light nuclei~\cite{seely09}
+suggested that clustering effects may be important in generating the observed
+structure function modification~\cite{Hirai_clusteringSF2010}.  One possibility
+suggested by this result is the idea that the local environment of the struck
+nucleon, rather than average nuclear density, is a driving force for much of
+the modification to the nuclear structure function.  This does not directly
+explain which of the models above may yield the best microscopic explanation
+for the effect, but it suggests that the details of the nuclear structure
+may need to be incorporated into quantitative evaluations of such effect.
+Currently, most such calculations begin with a simple mean-field model or
+infinite nuclear matter, and assume a simple scaling with density or some
+other parameter rather than predicting the A dependence directly.  As such,
+it has been difficult to determine which underlying physics best describes
+the data, as the universal $x$-dependence and weak A dependence of the
+earlier data from SLAC provided limited ability to constrain the models.
+With the JLab data on light nuclei, more detailed calculations need to be
+performed to test the A dependence associated with these models.
+
+
+
+\subsection{Physics motivation behind E03-103}\label{motivation.ssec}
+
+%%importance of light nuclei
+
+The experiment reported here, JLab E03-103, was designed to precisely map out
+the $x$, $Q^2$ and A-dependence of the inclusive electron scattering from
+light to medium heavy nuclei, with emphasis on light nuclei and large $x$
+region~\cite{E03103proposal}. Results for the EMC ratios for the light nuclei
+have been reported in reference~\cite{seely09}. 
+
+While the EMC effect has been well measured in heavy nuclei, the SLAC E139
+ratios for $^4$He have large uncertainties and there are no measurements on
+$^3$He in the valence region. Data on light nuclei are important in
+understanding the microscopic origin of the EMC effect as they allow direct
+comparison to detailed few-body calculations with minimal nuclear structure
+uncertainties. Data on light nuclei can also help constrain nuclear effects in
+the deuteron which are critical to the extraction of the neutron structure
+function from measurements on the deuteron~\cite{whitlow92, Arrington:2008zh,
+accardi10, accardi11, arrington12b}.  The light nuclei allow for better tests
+of the $A$ dependence of the EMC effect, while also providing measurements of
+nuclei more similar to the deuteron in mass and density.
+
+In addition, studies of short-range correlations~\cite{frankfurt93,
+arrington99, egiyan03, egiyan06, shneor07, subedi08, fomin12, arrington12a}
+suggest that high-density configurations play an important role in nuclei,
+which could potentially yield a modification of the nucleon structure function
+in overlapping nucleons~\cite{geesaman95, arrington01, sargsian03,
+arrington04, arrington06, fomin10}.  If two-body effects have a significant
+contribution to the EMC effect, then the EMC effect could look different in
+few-body nuclei than it does in heavy nuclei, where the effects may be
+saturated. There were also models which predicted a very different $x$
+dependence for the EMC effect for $A$=3,4~\cite{smirnov99, burov99,
+benhar_priv, afnan03}, so the inclusion of light nuclei was considered
+important as a way to look for two-body effects as a possible source of medium
+modification in nucleon structure.
+
+
+%importance of high x
+
+Beyond the focus on light nuclei, E03-103 emphasized taking data at large $x$,
+where Fermi motion and binding effect dominate. Because of the lack of data
+in this region and the limited data for few-body nuclei, many calculations of
+the EMC effect are performed for nuclear matter and extrapolated to lower
+density when comparing to the nuclear parton distributions.  In such cases,
+the important contributions of binding and Fermi motion are not modeled
+in detail, making it difficult to test models of effects beyond the convolution
+model.  
+
+While many models mentioned in the previous section have had some
+success, most are incomplete.  They may work only in a limited $x$ range,
+conflict with limitations set by other measurements, or explain the data while
+neglecting Fermi motion and binding. However, it is clear that the effects of
+binding and Fermi motion are important and contribute over the entire $x$
+region, not just at the largest $x$ values.  The large $x$ data are
+particularly sensitive to these effects and to the details of nuclear
+structure.  As such, precise high-$x$ data for both light and heavy nuclei can
+help to constrain these effects.
+

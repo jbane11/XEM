@@ -1,0 +1,14 @@
+* EMC slopes from E139
+* With CC and new n/p (in deuterium)
+* Fit over range x=0.3-0.7
+* Most points at Q2=5 GeV2 - when there were
+* multiple points, picked low epsilon
+* A	|dR/dx|        stat. unc.       total unc.
+4	 0.1802200     0.6023360E-01   0.6039084E-01
+9	 0.2085230     0.3666710E-01   0.3675534E-01
+12	 0.3000200     0.3212120E-01   0.3232929E-01
+27	 0.2948400     0.3204000E-01   0.3224150E-01
+40	 0.3221280     0.3711470E-01   0.3736686E-01
+56	 0.3593580     0.3848500E-01   0.3881910E-01
+108	 0.4195320     0.3939050E-01   0.3988119E-01
+197	 0.3944320     0.3701710E-01   0.3831610E-01

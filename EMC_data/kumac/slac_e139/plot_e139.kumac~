@@ -1,0 +1,9 @@
+ macro plot_e139
+   
+   ve/del *
+   
+   exe hallc#setup
+   
+   zone 2 4
+   
+   ve/read x,he4,be,c12,al,ca,fe,ag,au slac_e139_data.dat ! ! -/**/

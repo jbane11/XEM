@@ -1,0 +1,68 @@
+ macro plot_be
+   exe ~/hallc#setup
+   set *fon 66
+   set csiz 0.4
+   
+   ve/del *
+   
+   ve/cr ex(100) r 
+*  EMC
+* ve/read ax,aq2,arat,astat,asys emc_sn.dat ! ! -/*/
+* npa=$vlen(ax,1)
+
+
+* NMC
+   ve/read bx,bq2,by,brat,bstat,bsys nmc_pb.dat ! ! -/**/
+   ve/read bxc,bq2c,byc,bratc,bstatc,bsysc nmc_c.dat ! ! -/**/
+   
+   sigma bratnew=brat*bratc
+   sigma btot=bratnew*sqrt((bstat**2+bsys**2)/brat**2+(bstatc**2+bsysc**2)/bratc**2)
+   
+   npb=$vlen(bx,1)
+* SLAC E139
+   ve/read cx,crat,cstat slac_e139_au.dat ! ! -/**/
+   npc=$vlen(cx,1)
+   
+* sigma atot=sqrt(astat**2+asys**2)
+   
+   null -0.01 1.0 0.7 1.3
+   
+   set pmci 6
+   set hcol 6
+* hplot/err ax arat ex atot [npa] 31 0.2 1
+   
+   set pmci 1
+   set hcol 1
+   hplot/err bx bratnew ex btot [npb] 25 0.2 1
+   
+   set pmci 2
+   set hcol 2
+   hplot/err cx crat ex cstat [npc] 22 0.2 1
+   
+   atit 'x' '[s]?A! / [s]?D!' ! 220
+   
+   set pmci 1
+   ve/cr x(1) r 0.1
+   ve/cr y(1) r 0.85
+   ve/cr ey(1) r 0.004
+   key 0.15 0.85 25 'NMC (Pb/C x C/D)' 
+ 
+   set pmci 2
+   key 0.15 0.8 22 'SLAC E139 (Au)'
+   
+   set pmci 6
+* key 0.15 0.75 31 'EMC (Sn)'
+   
+   itx 0.2 1.2 'Au/Pb'
+   
+   
+   set ltyp 2
+   line 0 1 1 1
+   
+* Norm errors:
+* NMC = 0.4% for C/D, 0.2% for Be/C 
+* SLAC = 2.3 + 1 = 2.51%
+   
+   pic/print au_pb.eps
+   
+   

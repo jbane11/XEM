@@ -1,0 +1,764 @@
+\begin{thebibliography}{116}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Aubert et~al.}(1983)}]{aubert83}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Aubert}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{European Muon Collaboration}),
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B123}},
+  \bibinfo{pages}{275} (\bibinfo{year}{1983}).
+
+\bibitem[{\citenamefont{Bjorken}(1969)}]{bjorken_scaling}
+\bibinfo{author}{\bibfnamefont{J.~D.} \bibnamefont{Bjorken}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{179}},
+  \bibinfo{pages}{1547} (\bibinfo{year}{1969}).
+
+\bibitem[{\citenamefont{Schienbein et~al.}(2008)}]{Schienbein_tarmass_rev}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Schienbein}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{J. Phys.}
+  \textbf{\bibinfo{volume}{G35}}, \bibinfo{pages}{053101}
+  (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Arrington et~al.}(2006)\citenamefont{Arrington, Ent,
+  Keppel, Mammei, and Niculescu}}]{Arrington:2003nt}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Ent}},
+  \bibinfo{author}{\bibfnamefont{C.~E.} \bibnamefont{Keppel}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Mammei}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Niculescu}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{73}},
+  \bibinfo{pages}{035205} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Niculescu et~al.}(2006)\citenamefont{Niculescu,
+  Arrington, Ent, and Keppel}}]{niculescu06}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Niculescu}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Ent}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Keppel}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{C73}},
+  \bibinfo{pages}{045206} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Akulinichev
+  et~al.}(1985{\natexlab{a}})\citenamefont{Akulinichev, Shlomo, Kulagin, and
+  Vagradov}}]{Akulinichev:1985xq}
+\bibinfo{author}{\bibfnamefont{S.~V.} \bibnamefont{Akulinichev}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Shlomo}},
+  \bibinfo{author}{\bibfnamefont{S.~A.} \bibnamefont{Kulagin}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.~M.}
+  \bibnamefont{Vagradov}}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{55}}, \bibinfo{pages}{2239}
+  (\bibinfo{year}{1985}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Bodek and Ritchie}(1981{\natexlab{a}})}]{bodek81a}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodek}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ritchie}},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{23}},
+  \bibinfo{pages}{1070} (\bibinfo{year}{1981}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Bodek and Ritchie}(1981{\natexlab{b}})}]{bodek81b}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodek}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ritchie}},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{24}},
+  \bibinfo{pages}{1400} (\bibinfo{year}{1981}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Frankfurt and Strikman}(1981)}]{frankfurt81}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Frankfurt}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Strikman}},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B181}},
+  \bibinfo{pages}{22} (\bibinfo{year}{1981}).
+
+\bibitem[{\citenamefont{Ashman et~al.}(1988)}]{cern_na2prime1}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ashman}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Lett. B} \textbf{\bibinfo{volume}{202}},
+  \bibinfo{pages}{603} (\bibinfo{year}{1988}).
+
+\bibitem[{\citenamefont{Ashman et~al.}(1993)}]{cern_na2prime2}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ashman}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Z. Phys. C} \textbf{\bibinfo{volume}{57}},
+  \bibinfo{pages}{211} (\bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Bari et~al.}(1985)}]{cern_bcdms1}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Bari}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Lett. B} \textbf{\bibinfo{volume}{163}},
+  \bibinfo{pages}{282} (\bibinfo{year}{1985}).
+
+\bibitem[{\citenamefont{Bodek et~al.}(1983{\natexlab{a}})}]{slace49b}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodek}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. Lett} \textbf{\bibinfo{volume}{51}},
+  \bibinfo{pages}{534} (\bibinfo{year}{1983}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Stein et~al.}(1975)}]{slace61}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Stein}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{12}},
+  \bibinfo{pages}{1884} (\bibinfo{year}{1975}).
+
+\bibitem[{\citenamefont{Bodek et~al.}(1983{\natexlab{b}})}]{slace87}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodek}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. Lett} \textbf{\bibinfo{volume}{50}},
+  \bibinfo{pages}{1431} (\bibinfo{year}{1983}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Gomez et~al.}(1994)}]{slace139}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Gomez}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{49}},
+  \bibinfo{pages}{4348} (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Aubert et~al.}(1986)}]{aubert86}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Aubert}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{European Muon Collaboration}),
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B272}},
+  \bibinfo{pages}{158} (\bibinfo{year}{1986}).
+
+\bibitem[{\citenamefont{Arneodo et~al.}(1995)}]{Arneodo:1995cs}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arneodo}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B441}},
+  \bibinfo{pages}{12} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Amaudruz et~al.}(1995)}]{Amaudruz:1995tq}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Amaudruz}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Nucl. Phys.}
+  \textbf{\bibinfo{volume}{B441}}, \bibinfo{pages}{3} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Ackerstaff et~al.}(2000)}]{hermes_ackerstaff}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Ackerstaff}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Lett.}
+  \textbf{\bibinfo{volume}{B475}}, \bibinfo{pages}{386} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Airapetian
+  et~al.}(2003)}]{hermes_correction_airapetian}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Airapetian}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Lett. B}
+  \textbf{\bibinfo{volume}{567}}, \bibinfo{pages}{339} (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Arrington et~al.}(2012{\natexlab{a}})}]{arrington12c}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. C}
+  \textbf{\bibinfo{volume}{86}}, \bibinfo{pages}{065204}
+  (\bibinfo{year}{2012}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Antonov and Petkov}(1986)}]{antonov86}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Antonov}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Petkov}},
+  \bibinfo{journal}{Il Nuovo Cimento A} \textbf{\bibinfo{volume}{94}},
+  \bibinfo{pages}{68} (\bibinfo{year}{1986}).
+
+\bibitem[{\citenamefont{Sick and Day}(1992{\natexlab{a}})}]{sick92}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sick}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Day}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B274}},
+  \bibinfo{pages}{16} (\bibinfo{year}{1992}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Geesaman et~al.}(1995)\citenamefont{Geesaman, Saito,
+  and Thomas}}]{geesaman95}
+\bibinfo{author}{\bibfnamefont{D.~F.} \bibnamefont{Geesaman}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Saito}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~W.} \bibnamefont{Thomas}},
+  \bibinfo{journal}{Ann. Rev. Nucl. Part. Sci.} \textbf{\bibinfo{volume}{45}},
+  \bibinfo{pages}{337} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Norton}(2003)}]{Norton_emcreview}
+\bibinfo{author}{\bibfnamefont{P.~R.} \bibnamefont{Norton}},
+  \bibinfo{journal}{Rept. Prog. Phys.} \textbf{\bibinfo{volume}{66}},
+  \bibinfo{pages}{1253} (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Sargsian et~al.}(2003)}]{sargsian03}
+\bibinfo{author}{\bibfnamefont{M.~M.} \bibnamefont{Sargsian}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{J. Phys.}
+  \textbf{\bibinfo{volume}{G29}}, \bibinfo{pages}{R1} (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Akulinichev
+  et~al.}(1985{\natexlab{b}})\citenamefont{Akulinichev, Kulagin, and
+  Vagradov}}]{Akulinichev:1985ij}
+\bibinfo{author}{\bibfnamefont{S.~V.} \bibnamefont{Akulinichev}},
+  \bibinfo{author}{\bibfnamefont{S.~A.} \bibnamefont{Kulagin}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.~M.}
+  \bibnamefont{Vagradov}}, \bibinfo{journal}{Phys. Lett.}
+  \textbf{\bibinfo{volume}{B158}}, \bibinfo{pages}{485}
+  (\bibinfo{year}{1985}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Frankfurt and Strikman}(1987)}]{Frankfurt:1985ui}
+\bibinfo{author}{\bibfnamefont{L.~L.} \bibnamefont{Frankfurt}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.~I.}
+  \bibnamefont{Strikman}}, \bibinfo{journal}{Phys. Lett.}
+  \textbf{\bibinfo{volume}{B183}}, \bibinfo{pages}{254} (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Benhar et~al.}(1997)\citenamefont{Benhar,
+  Pandharipande, and Sick}}]{benhar_emccalcnucmatt}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Benhar}},
+  \bibinfo{author}{\bibfnamefont{V.~R.} \bibnamefont{Pandharipande}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sick}},
+  \bibinfo{journal}{Phys. Lett. B.} \textbf{\bibinfo{volume}{410}},
+  \bibinfo{pages}{79} (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Marco et~al.}(1996)\citenamefont{Marco, Oset, and
+  Fernandez~de Cordoba}}]{Marco_dis:1995}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Marco}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Oset}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Fernandez~de Cordoba}},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{A611}},
+  \bibinfo{pages}{484} (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Frankfurt and
+  Strikman}(2010)}]{Frankfurt_photon_pdf2010}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Frankfurt}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Strikman}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{82}},
+  \bibinfo{pages}{065203} (\bibinfo{year}{2010}), \eprint{1009.4920}.
+
+\bibitem[{\citenamefont{Frankfurt and Strikman}(2012)}]{Frankfurt:2012qs}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Frankfurt}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Strikman}},
+  \bibinfo{journal}{Int.J.Mod.Phys.} \textbf{\bibinfo{volume}{E21}},
+  \bibinfo{pages}{1230002} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Hen et~al.}(2013)\citenamefont{Hen, Higinbotham,
+  Miller, Piasetzky, and Weinstein}}]{hen13}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Hen}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Higinbotham}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Miller}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Piasetzky}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Weinstein}},
+  \bibinfo{journal}{Int. J. Mod. Phys. E. 22,}
+  \textbf{\bibinfo{volume}{1330017}} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Jaffe}(1983)}]{jaffe83}
+\bibinfo{author}{\bibfnamefont{R.~L.} \bibnamefont{Jaffe}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{50}},
+  \bibinfo{pages}{228} (\bibinfo{year}{1983}).
+
+\bibitem[{\citenamefont{Pirner and Vary}(2011)}]{pirner11}
+\bibinfo{author}{\bibfnamefont{H.~J.} \bibnamefont{Pirner}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.~P.} \bibnamefont{Vary}},
+  \bibinfo{journal}{Phys.Rev.} \textbf{\bibinfo{volume}{C84}},
+  \bibinfo{pages}{015201} (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Arrington}(2006)}]{arrington06}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}}
+  (\bibinfo{year}{2006}), \eprint{nucl-ex/0602007}.
+
+\bibitem[{\citenamefont{Fomin et~al.}(2010{\natexlab{a}})}]{fomin10}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Fomin}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{105}},
+  \bibinfo{pages}{212502} (\bibinfo{year}{2010}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Close et~al.}(1983)}]{close83}
+\bibinfo{author}{\bibfnamefont{F.~E.} \bibnamefont{Close}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Lett. B.}
+  \textbf{\bibinfo{volume}{129}}, \bibinfo{pages}{346} (\bibinfo{year}{1983}).
+
+\bibitem[{\citenamefont{Nachtmann and Pirner}(1984)}]{Nach_pirner}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Nachtmann}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.~J.} \bibnamefont{Pirner}},
+  \bibinfo{journal}{Z. Phys. C} \textbf{\bibinfo{volume}{21}},
+  \bibinfo{pages}{277} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{Chanfray et~al.}(1984)\citenamefont{Chanfray,
+  Nachtmann, and Pirner}}]{chanfray:1984}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Chanfray}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Nachtmann}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Pirner}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B147}},
+  \bibinfo{pages}{249} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{Close et~al.}(1985)\citenamefont{Close, Jaffe, Roberts,
+  and Ross}}]{close85}
+\bibinfo{author}{\bibfnamefont{F.~E.} \bibnamefont{Close}},
+  \bibinfo{author}{\bibfnamefont{R.~L.} \bibnamefont{Jaffe}},
+  \bibinfo{author}{\bibfnamefont{R.~G.} \bibnamefont{Roberts}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.~G.} \bibnamefont{Ross}},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{31}},
+  \bibinfo{pages}{1004} (\bibinfo{year}{1985}).
+
+\bibitem[{\citenamefont{Saito and Thomas}(1994)}]{Saito:1994ki}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Saito}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~W.} \bibnamefont{Thomas}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B327}},
+  \bibinfo{pages}{9} (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Cloet et~al.}(2005)\citenamefont{Cloet, Bentz, and
+  Thomas}}]{Cloet:2005rt}
+\bibinfo{author}{\bibfnamefont{I.~C.} \bibnamefont{Cloet}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Bentz}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~W.} \bibnamefont{Thomas}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{95}},
+  \bibinfo{pages}{052302} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Cloet et~al.}(2006)\citenamefont{Cloet, Bentz, and
+  Thomas}}]{Cloet:2006bq}
+\bibinfo{author}{\bibfnamefont{I.~C.} \bibnamefont{Cloet}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Bentz}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~W.} \bibnamefont{Thomas}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B642}},
+  \bibinfo{pages}{210} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Saito et~al.}(2007)\citenamefont{Saito, Tsushima, and
+  Thomas}}]{Saito:2005rv}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Saito}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Tsushima}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~W.} \bibnamefont{Thomas}},
+  \bibinfo{journal}{Prog. Part. Nucl. Phys.} \textbf{\bibinfo{volume}{58}},
+  \bibinfo{pages}{1} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Smith and Miller}(2004)}]{Smith:2004dn}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Smith}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Miller}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{70}},
+  \bibinfo{pages}{065205} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Smith and Miller}(2005)}]{Smith:2005ra}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Smith}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Miller}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{72}},
+  \bibinfo{pages}{022203} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Smith and Miller}(2002)}]{Smith:2002ci}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Smith}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Miller}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{65}},
+  \bibinfo{pages}{055206} (\bibinfo{year}{2002}).
+
+\bibitem[{\citenamefont{Seely et~al.}(2009)}]{seely09}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Seely}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{103}},
+  \bibinfo{pages}{202301} (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Hirai et~al.}(2011)\citenamefont{Hirai, Kumano, Saito,
+  and Watanabe}}]{Hirai_clusteringSF2010}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hirai}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Kumano}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Saito}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Watanabe}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{83}},
+  \bibinfo{pages}{035202} (\bibinfo{year}{2011}), \eprint{1008.1313}.
+
+\bibitem[{\citenamefont{Arrington and Gaskell}()}]{E03103proposal}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Gaskell}},
+  \bibinfo{howpublished}{spokespersons, Jefferson Lab experiment E03-103}.
+
+\bibitem[{\citenamefont{Whitlow et~al.}(1992)\citenamefont{Whitlow, Riordan,
+  Dasu, Rock, and Bodek}}]{whitlow92}
+\bibinfo{author}{\bibfnamefont{L.~W.} \bibnamefont{Whitlow}},
+  \bibinfo{author}{\bibfnamefont{E.~M.} \bibnamefont{Riordan}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Dasu}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Rock}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodek}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B282}},
+  \bibinfo{pages}{475} (\bibinfo{year}{1992}).
+
+\bibitem[{\citenamefont{Arrington
+  et~al.}(2009{\natexlab{a}})\citenamefont{Arrington, Coester, Holt, and
+  Lee}}]{Arrington:2008zh}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Coester}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Holt}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.~S.~H.} \bibnamefont{Lee}},
+  \bibinfo{journal}{J. Phys.} \textbf{\bibinfo{volume}{G36}},
+  \bibinfo{pages}{025005} (\bibinfo{year}{2009}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Accardi et~al.}(2010)}]{accardi10}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Accardi}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{81}},
+  \bibinfo{pages}{034016} (\bibinfo{year}{2010}), \eprint{0911.2254}.
+
+\bibitem[{\citenamefont{Accardi et~al.}(2011)\citenamefont{Accardi,
+  Melnitchouk, Owens, Christy, Keppel et~al.}}]{accardi11}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Accardi}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Melnitchouk}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Owens}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Christy}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Keppel}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. D}
+  \textbf{\bibinfo{volume}{84}}, \bibinfo{pages}{014008}
+  (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Arrington
+  et~al.}(2012{\natexlab{b}})\citenamefont{Arrington, Rubin, and
+  Melnitchouk}}]{arrington12b}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Rubin}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Melnitchouk}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{108}},
+  \bibinfo{pages}{252001} (\bibinfo{year}{2012}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Frankfurt et~al.}(1993)\citenamefont{Frankfurt,
+  Strikman, Day, and Sargsian}}]{frankfurt93}
+\bibinfo{author}{\bibfnamefont{L.~L.} \bibnamefont{Frankfurt}},
+  \bibinfo{author}{\bibfnamefont{M.~I.} \bibnamefont{Strikman}},
+  \bibinfo{author}{\bibfnamefont{D.~B.} \bibnamefont{Day}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Sargsian}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{2451} (\bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Arrington et~al.}(1999)\citenamefont{Arrington,
+  Armstrong, Averett, Baker, de~Bever et~al.}}]{arrington99}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Armstrong}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Averett}},
+  \bibinfo{author}{\bibfnamefont{O.~K.} \bibnamefont{Baker}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{de~Bever}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys.Rev.Lett.}
+  \textbf{\bibinfo{volume}{82}}, \bibinfo{pages}{2056} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Egiyan et~al.}(2003)}]{egiyan03}
+\bibinfo{author}{\bibfnamefont{K.~S.} \bibnamefont{Egiyan}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{CLAS}), \bibinfo{journal}{Phys.
+  Rev. C} \textbf{\bibinfo{volume}{68}}, \bibinfo{pages}{014313}
+  (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Egiyan et~al.}(2006)}]{egiyan06}
+\bibinfo{author}{\bibfnamefont{K.~S.} \bibnamefont{Egiyan}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{CLAS}), \bibinfo{journal}{Phys.
+  Rev. Lett.} \textbf{\bibinfo{volume}{96}}, \bibinfo{pages}{082501}
+  (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Shneor et~al.}(2007)}]{shneor07}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Shneor}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{Jefferson Lab Hall A Collaboration}),
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{99}},
+  \bibinfo{pages}{072501} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Subedi et~al.}(2008)}]{subedi08}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Subedi}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{320}},
+  \bibinfo{pages}{1476} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Fomin et~al.}(2012)}]{fomin12}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Fomin}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{108}},
+  \bibinfo{pages}{092502} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Arrington
+  et~al.}(2012{\natexlab{c}})\citenamefont{Arrington, Higinbotham, Rosner, and
+  Sargsian}}]{arrington12a}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Higinbotham}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Rosner}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Sargsian}},
+  \bibinfo{journal}{Prog. Part. Nucl. Phys.} \textbf{\bibinfo{volume}{67}},
+  \bibinfo{pages}{898} (\bibinfo{year}{2012}{\natexlab{c}}).
+
+\bibitem[{\citenamefont{Arrington et~al.}(2001)}]{arrington01}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. C}
+  \textbf{\bibinfo{volume}{64}}, \bibinfo{pages}{014602}
+  (\bibinfo{year}{2001}).
+
+\bibitem[{\citenamefont{Arrington}(2004)}]{arrington04}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{journal}{Heavy Ion Phys.} \textbf{\bibinfo{volume}{21}},
+  \bibinfo{pages}{295} (\bibinfo{year}{2004}), \eprint{hep-ph/0304213}.
+
+\bibitem[{\citenamefont{Smirnov}(1999)}]{smirnov99}
+\bibinfo{author}{\bibfnamefont{G.~I.} \bibnamefont{Smirnov}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{C10}},
+  \bibinfo{pages}{239} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Burov et~al.}(1999)\citenamefont{Burov, Molochkov, and
+  Smirnov}}]{burov99}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Burov}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Molochkov}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Smirnov}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B466}},
+  \bibinfo{pages}{1} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Benhar}()}]{benhar_priv}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Benhar}},
+  \bibinfo{note}{private communication}.
+
+\bibitem[{\citenamefont{Afnan et~al.}(2003)\citenamefont{Afnan, Bissey, Gomez,
+  Katramatou, Liuti et~al.}}]{afnan03}
+\bibinfo{author}{\bibfnamefont{I.~R.} \bibnamefont{Afnan}},
+  \bibinfo{author}{\bibfnamefont{F.~R.~P.} \bibnamefont{Bissey}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Gomez}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Katramatou}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Liuti}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. C}
+  \textbf{\bibinfo{volume}{68}}, \bibinfo{pages}{035201}
+  (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Leemann et~al.}(2001)\citenamefont{Leemann, Douglas,
+  and Krafft}}]{Leemann:2001dg}
+\bibinfo{author}{\bibfnamefont{C.~W.} \bibnamefont{Leemann}},
+  \bibinfo{author}{\bibfnamefont{D.~R.} \bibnamefont{Douglas}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{G.~A.}
+  \bibnamefont{Krafft}}, \bibinfo{journal}{Ann. Rev. Nucl. Part. Sci.}
+  \textbf{\bibinfo{volume}{51}}, \bibinfo{pages}{413} (\bibinfo{year}{2001}).
+
+\bibitem[{\citenamefont{Arrington}(1998)}]{johna_thesis}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}}, Ph.D. thesis,
+  \bibinfo{school}{California Institute of Technology} (\bibinfo{year}{1998}),
+  \bibinfo{note}{arXiv:nucl-ex/0608013}.
+
+\bibitem[{\citenamefont{Dutta et~al.}(2003)}]{Dutta:2003yt}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Dutta}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{68}},
+  \bibinfo{pages}{064603} (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Baker et~al.}(1995)}]{baker95}
+\bibinfo{author}{\bibfnamefont{O.~K.} \bibnamefont{Baker}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Nucl. Instrum. Meth.}
+  \textbf{\bibinfo{volume}{A367}}, \bibinfo{pages}{92} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Mkrtchyan et~al.}(2013)}]{mkrtchyan13}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Mkrtchyan}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Nucl. Instrum. Meth.}
+  \textbf{\bibinfo{volume}{A719}}, \bibinfo{pages}{85} (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Berz}(1995)}]{berz_cosy}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Berz}}, \bibinfo{journal}{{COSY
+  Infinity Version and Reference Manual}}  (\bibinfo{year}{1995}),
+  \bibinfo{note}{{NSCL Technical report MSUCL-977}}.
+
+\bibitem[{\citenamefont{Blok et~al.}(2008)}]{blok08}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Blok}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{78}},
+  \bibinfo{pages}{045202} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Daniel}(2007)}]{aji_thesis}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Daniel}}, Ph.D. thesis,
+  \bibinfo{school}{University of Houston} (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Day and Sick}(2004)}]{day_fymodel}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Day}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sick}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{69}},
+  \bibinfo{pages}{028501} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Fomin}(2008)}]{nadia_thesis}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Fomin}}, Ph.D. thesis,
+  \bibinfo{school}{University of Virginia} (\bibinfo{year}{2008}),
+  \bibinfo{note}{arXiv:0812.2114}.
+
+\bibitem[{\citenamefont{McKeown et~al.}(1986)}]{Mckeown_fymodel}
+\bibinfo{author}{\bibfnamefont{R.~D.} \bibnamefont{McKeown}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. lett}
+  \textbf{\bibinfo{volume}{56}}, \bibinfo{pages}{1452} (\bibinfo{year}{1986}).
+
+\bibitem[{\citenamefont{Benhar et~al.}(2006)\citenamefont{Benhar, Day, and
+  Sick}}]{Benhar:qe_archive}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Benhar}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Day}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sick}}
+  (\bibinfo{year}{2006}), \eprint{nucl-ex/0603032}.
+
+\bibitem[{\citenamefont{Bosted and Christy}(2008)}]{bosted_model}
+\bibinfo{author}{\bibfnamefont{P.~E.} \bibnamefont{Bosted}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~E.} \bibnamefont{Christy}},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{77}},
+  \bibinfo{pages}{065206} (\bibinfo{year}{2008}), \eprint{0711.0159}.
+
+\bibitem[{\citenamefont{Mo and Tsai}(1969)}]{motsai_rc}
+\bibinfo{author}{\bibfnamefont{L.~W.} \bibnamefont{Mo}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Y.~S.} \bibnamefont{Tsai}},
+  \bibinfo{journal}{Rev. Mod. Phys.} \textbf{\bibinfo{volume}{41}},
+  \bibinfo{pages}{205} (\bibinfo{year}{1969}).
+
+\bibitem[{\citenamefont{Tsai}(1971)}]{tsai_rc}
+\bibinfo{author}{\bibfnamefont{Y.~S.} \bibnamefont{Tsai}},
+  \bibinfo{journal}{{}}  (\bibinfo{year}{1971}),
+  \bibinfo{note}{{SLAC-PUB-848}}.
+
+\bibitem[{\citenamefont{Dasu}(1988)}]{dasu_thesis}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Dasu}}, Ph.D. thesis,
+  \bibinfo{school}{University of Rochester} (\bibinfo{year}{1988}).
+
+\bibitem[{\citenamefont{Aste et~al.}(2005)\citenamefont{Aste, von Arx, and
+  Trautmann}}]{aste_ccor}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Aste}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{von Arx}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Trautmann}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{A 26}},
+  \bibinfo{pages}{167} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Rosenfelder}(1980)}]{rosenfelder_ccor}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Rosenfelder}},
+  \bibinfo{journal}{Annals Phys.} \textbf{\bibinfo{volume}{128}},
+  \bibinfo{pages}{188} (\bibinfo{year}{1980}).
+
+\bibitem[{\citenamefont{Aste and Jourdan}(2004)}]{aste2_ccor}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Aste}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Jourdan}},
+  \bibinfo{journal}{Europhys. Lett.} \textbf{\bibinfo{volume}{67}},
+  \bibinfo{pages}{753} (\bibinfo{year}{2004}), \eprint{nucl-th/0403075}.
+
+\bibitem[{\citenamefont{Bodek et~al.}(1979)}]{slacf2nf2p}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodek}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{20}},
+  \bibinfo{pages}{1471} (\bibinfo{year}{1979}).
+
+\bibitem[{\citenamefont{Arneodo}(1995)}]{nmcf2nf2p1}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arneodo}},
+  \bibinfo{journal}{Nuc. Phys. B} \textbf{\bibinfo{volume}{364}},
+  \bibinfo{pages}{107} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Arneodo}(1997)}]{nmcf2nf2p2}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Arneodo}},
+  \bibinfo{journal}{Nuc. Phys. B} \textbf{\bibinfo{volume}{487}},
+  \bibinfo{pages}{3} (\bibinfo{year}{1997}).
+
+\bibitem[{\citenamefont{Lai et~al.}(2007)}]{cteq6_pdf}
+\bibinfo{author}{\bibfnamefont{H.~L.} \bibnamefont{Lai}} \bibnamefont{et~al.},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{04}}, \bibinfo{pages}{089}
+  (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Airapetian et~al.}(2011)}]{hermes_dbyp}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Airapetian}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{JHEP}
+  \textbf{\bibinfo{volume}{1105}}, \bibinfo{pages}{126} (\bibinfo{year}{2011}),
+  \eprint{1103.5704}.
+
+\bibitem[{\citenamefont{Arrington
+  et~al.}(2009{\natexlab{b}})\citenamefont{Arrington, Coester, Holt, and
+  Lee}}]{arrington09}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Coester}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Holt}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.-S.} \bibnamefont{Lee}},
+  \bibinfo{journal}{J. Phys.} \textbf{\bibinfo{volume}{G36}},
+  \bibinfo{pages}{025005} (\bibinfo{year}{2009}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Georgi and Politzer}(1976)}]{georgi_tmc}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Georgi}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.~D.} \bibnamefont{Politzer}},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{14}},
+  \bibinfo{pages}{1829} (\bibinfo{year}{1976}).
+
+\bibitem[{\citenamefont{Accardi and
+  Melnitchouk}(2008)}]{Accardi_tarmass2008plb}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Accardi}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Melnitchouk}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B670}},
+  \bibinfo{pages}{114} (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Accardi and Qiu}(2008)}]{Accardi_tarmass2008jhep}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Accardi}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.-W.} \bibnamefont{Qiu}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{07}}, \bibinfo{pages}{090}
+  (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Fomin et~al.}(2010{\natexlab{b}})}]{nadia_f2prl}
+\bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Fomin}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{105}},
+  \bibinfo{pages}{212502} (\bibinfo{year}{2010}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Niculescu et~al.}(2000)}]{niculescu00a}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Niculescu}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{85}}, \bibinfo{pages}{1182} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Melnitchouk et~al.}(2005)\citenamefont{Melnitchouk,
+  Ent, and Keppel}}]{melnitchouk:2005zr}
+\bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Melnitchouk}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Ent}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Keppel}},
+  \bibinfo{journal}{Phys. Rept.} \textbf{\bibinfo{volume}{406}},
+  \bibinfo{pages}{127} (\bibinfo{year}{2005}).
+
+\bibitem[{\citenamefont{Osipenko et~al.}(2010)}]{Osipenko:2010sb}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Osipenko}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{CLAS Collaboration}), \bibinfo{journal}{Nucl. Phys.}
+  \textbf{\bibinfo{volume}{A845}}, \bibinfo{pages}{1} (\bibinfo{year}{2010}).
+
+\bibitem[{onl()}]{online_material}
+\bibinfo{note}{See Supplemental Material at [to be inserted] for the EMC ratios
+  from this experiment and the updated SLAC results.}
+
+\bibitem[{\citenamefont{Dasu et~al.}(1994)\citenamefont{Dasu, deBarbaro, Bodek,
+  Harada, Krasny et~al.}}]{slace140}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Dasu}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{deBarbaro}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Bodek}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Harada}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Krasny}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. D}
+  \textbf{\bibinfo{volume}{49}}, \bibinfo{pages}{5641} (\bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Benvenuti et~al.}(1987)}]{Benvenuti:1987az}
+\bibinfo{author}{\bibfnamefont{A.~C.} \bibnamefont{Benvenuti}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{BCDMS}),
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B189}},
+  \bibinfo{pages}{483} (\bibinfo{year}{1987}).
+
+\bibitem[{\citenamefont{Guzey et~al.}(2012)}]{guzey12}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Guzey}} \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{86}},
+  \bibinfo{pages}{045201} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Tao et~al.}(1996)}]{Tao:1995uh}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Tao}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{E140X Collaboration}), \bibinfo{journal}{Z.Phys.}
+  \textbf{\bibinfo{volume}{C70}}, \bibinfo{pages}{387} (\bibinfo{year}{1996}).
+
+\bibitem[{\citenamefont{Tvaskis et~al.}(2007)\citenamefont{Tvaskis, Christy,
+  Arrington, Asaturyan, Baker et~al.}}]{Tvaskis:2006tv}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Tvaskis}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Christy}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Asaturyan}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Baker}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{98}}, \bibinfo{pages}{142301}
+  (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Solvignon et~al.}(2009)\citenamefont{Solvignon,
+  Gaskell, and Arrington}}]{Solvignon:2009it}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Solvignon}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Gaskell}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{journal}{AIP Conf. Proc.} \textbf{\bibinfo{volume}{1160}},
+  \bibinfo{pages}{155} (\bibinfo{year}{2009}), \eprint{arXiv:0906.0512}.
+
+\bibitem[{\citenamefont{Mamyan}(2012)}]{Mamyan:2012th}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Mamyan}}
+  (\bibinfo{year}{2012}), \eprint{arXiv:1202.1457}.
+
+\bibitem[{\citenamefont{Weinstein et~al.}(2011)\citenamefont{Weinstein,
+  Piasetzky, Higinbotham, Gomez, Hen, and Shneor}}]{weinstein11}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Weinstein}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Piasetzky}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Higinbotham}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Gomez}},
+  \bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Hen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Shneor}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{106}},
+  \bibinfo{pages}{052301} (\bibinfo{year}{2011}).
+
+\bibitem[{\citenamefont{Sargsian}(2012)}]{sargsian12}
+\bibinfo{author}{\bibfnamefont{M.~M.} \bibnamefont{Sargsian}}
+  (\bibinfo{year}{2012}), \eprint{arXiv:1210.3280}.
+
+\bibitem[{\citenamefont{Sick and Day}(1992{\natexlab{b}})}]{sick_day_nucmatter}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Sick}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Day}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B274}},
+  \bibinfo{pages}{16} (\bibinfo{year}{1992}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Piasetzky et~al.}(2006)\citenamefont{Piasetzky,
+  Sargsian, Frankfurt, Strikman, and Watson}}]{piasetzky06}
+\bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Piasetzky}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Sargsian}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Frankfurt}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Strikman}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Watson}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{97}},
+  \bibinfo{pages}{162504} (\bibinfo{year}{2006}).
+
+\bibitem[{\citenamefont{Arrington et~al.}()\citenamefont{Arrington, Daniel, and
+  Gaskell}}]{e12008_proposal}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Arrington}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Daniel}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Gaskell}},
+  \bibinfo{howpublished}{spokespersons, Jefferson lab experiment E12-10-008}.
+
+\end{thebibliography}

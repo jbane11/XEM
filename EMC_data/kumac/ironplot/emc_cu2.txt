@@ -1,0 +1,62 @@
+For earlier data click here.
+
+EXPeriment     = CERN-NA-037
+REACtion       = muon Cu --> muon X
+Collaboration  = NMC
+Author         = Ashman et al
+REFerence      = Zeit. Phys. C57 (1993) 211
+Additional info: Measurement of the ratio of the nucleon structure function in
+                 copper and deuterium. Data come from two independent
+                 experiments. The first, the "chariot" experiment used moveable
+                 targets of copper and deuterium which were interchanged at
+                 approximately hourly intervals. The second, the "addendum"
+                 experiment, had both targets simultaneously in the beam.
+                 Results from the former have also appeared in Ashman et al
+                 1988 Phys. Lett. 202B 603.
+
+
+
+     x            Q**2                                   errors
+                (GeV**2)           F2(CU)/F2(D)     stat.      sys.
+
+   0.031           4.5                0.930         0.025      0.022
+   0.050           8.5                0.955         0.020      0.019
+   0.079          13.6                0.996         0.016      0.018
+   0.123          18.1                1.047         0.019      0.019
+   0.173          21.3                1.021         0.022      0.018
+   0.244          24.7                1.037         0.021      0.019
+   0.342          30.0                0.945         0.029      0.017
+   0.443          34.4                0.957         0.045      0.018
+   0.563          40.4                0.910         0.096      0.017
+
+
+     x            Q**2                                   errors
+                (GeV**2)           F2(CU)/F2(D)     stat.      sys.
+
+   0.015           4.5                0.857         0.022      0.023
+   0.031           3.3                0.963         0.013      0.018
+   0.050           6.4                1.005         0.012      0.013
+   0.079           8.5                1.011         0.011      0.011
+   0.123          11.0                1.041         0.016      0.010
+   0.173          16.1                1.031         0.012      0.011
+   0.243          19.3                1.018         0.014      0.010
+   0.343          25.8                0.962         0.021      0.011
+   0.444          36.0                0.959         0.034      0.013
+   0.612          46.4                0.918         0.043      0.013
+
+               Errors are combined statistics and systematics.
+                 x                F2(CU)/F2(D)         stat.err.
+
+               0.015                  0.857             0.032
+               0.031                  0.953             0.018
+               0.050                  0.990             0.015
+               0.079                  1.006             0.013
+               0.123                  1.043             0.016
+               0.173                  1.029             0.014
+               0.243                  1.023             0.015
+               0.343                  0.956             0.020
+               0.444                  0.958             0.029
+               0.612                  0.915             0.037
+
+</pre>
+</body>

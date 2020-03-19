@@ -1,0 +1,503 @@
+ 
+macro pl
+ igset txal 0
+ 
+ve/del *
+exe release
+opt logx
+set pass 1
+set pass 3
+set bwid 5
+igset chhe .45
+
+set xwin 0.0001 
+set ywin 0.0001
+ 
+set yval 300
+set xval 0.3
+ 
+ set NDVY 10
+ set ymgu 1
+ set ymgl 2
+
+ set ylab 1.2 
+ set xlab 1.5
+ 
+exe rard-read#read
+ ve/create error(16) R 16*0
+  
+ v/re xx,qq,rd,errd Rd_1990.dat
+ v/re xx,qq,hrd,herrd Rd_1990_he.dat
+ 
+* HERMES 
+* Kr
+ v/re  avx,avq2kr,f2kr,f2fitkr,rkr,rfitkr fiteresult.dat 
+ 
+ 
+* HERMES
+* 14N 
+ v/re  avxn,nq,f2,sta,nrsup,nrfit,rd,errd,f2rat,npfit,norm 14n_rard_newsysup.dat
+ v/re  avxn,nq,f2,sta,nrlow,nrfit,rd,errd,f2rat,npfit,norm 14n_rard_newsyslow.dat
+ v/re  avxn,nq,f2,sta,nr,nrfit,rd,errd,f2rat,npfit,norm 14n_rard.chi2b.newsub.dat
+  
+* HERMES
+* He3   
+ v/re  avxh,hq,hf2,sta,hrsup,hrfit,rd,errd,f2rat,npfit,norm 3he_rard_newsysup.dat 
+ v/re  avxh,hq,hf2,sta,hrlow,hrfit,rd,errd,f2rat,npfit,norm 3he_rard_newsyslow.dat 
+ v/re  avxh,hq,hf2,sta,hr,hrfit,rd,errd,f2rat,npfit,norm 3he_rard.chi2b.newsub.dat 
+ 
+  sigma synup=abs(nrsup-nr)
+  sigma synlow=abs(nr-nrlow)
+  sigma syhup=abs(hrsup-hr)
+  sigma syhlow=abs(hr-hrlow)
+ 
+ v/cre syskr(16) r 1000 3.2502 0.7340 0.2662 0.3170 0.2130 0.1423 0.1351 0.0249 0.0275 0.4256 0.3229 0.6147 0.7231 0.2286 0.8123     
+ v/cre sysn2(16) r 0.9997 0.6620 1.1647 0.1321 0.1009 0.0442 0.0094 0.0628 0.0537 0.0380 0.0326 0.0192 0.0044 0.0285 0.3414 1000
+ ve/cre syshe(12) r  0.1436544 0.1625251 0.1054893 0.1162495 0.1203004 0.1197798 0.1168646 0.1539137 0.2267865 0.3774106 0.8287337
+ sigma syskr=sqrt((syskr)**2+(rfitkr/rkr)**2+(errd/rd)**2)*rkr
+ sigma sysn2=sqrt((sysn2)**2+(nrfit/nr)**2+(errd/rd)**2)*nr
+ sigma syshe=sqrt((syshe)**2+(hrfit/hr)**2+(herrd/hrd)**2)*hr
+ 
+  
+***** JLAB *****
+ 
+ve/read q2cu,xcu,rcu,drcu,totcu rat_cu2_md.dat
+ve/read q2cur,xcur,rcur,drcur,totcur rat_cu2_roz.dat
+
+ve/del q2au; ve/del xau; ve/del rau; ve/del drau; ve/del totau
+ 
+ve/read q2au,xau,rau,drau,totau rat_au_md.dat
+ve/read q2aur,xaur,raur,draur,totaur rat_au_rs.dat
+ 
+ve/read q2c1,xc1,rc1,drc1,totc1 rat_c1_md.dat
+ve/read q2c1r,xc1r,rc1r,drc1r,totc1r rat_c1_rs.dat
+ 
+ 
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* WORLD DATA
+* 
+* SLAC DATA
+* Carbon/D (E143)
+vec/cre slaq(9) r 1.32 1.47 1.67 1.90 2.11 2.29 2.46 2.60 2.73
+vec/cre slar(9) r 1.323 1.513 1.208 0.867 0.921 0.587 0.871 0.861 0.604
+vec/cre slaer(9) r 0.365 0.392 0.288 0.195 0.210 0.173 0.239 0.266 0.218  
+ 
+* Iron/D (E140)
+vec/cre qfe(4) r 0.95 1.5 2.5 5.0
+vec/cre fe(4) r 1.107 0.783 1.168 0.889
+vec/cre errfe(4) r 0.140 0.104 0.231 0.129            
+ 
+* Au/D (E140)
+v/cr qau(1) r 1.05
+v/cr au(1) r 1.197      
+v/cr errau(1) r 0.209       
+ 
+* NMC DATA
+* He/D
+ v/re avxhe4,avqhe4,f2he4,ef2he4,rhe4,ehe4,rdhe4,erdhe4 4he_rard_nmc.dat
+* C/D
+ v/re avxc12,qcc,f2c12,ef2c12,rc12,ec12,rdc12,erdc12 12c_rard_nmc.dat
+* Ca/D
+ v/re avxca,avqca,f2ca,ef2ca,rca,eca,rdca,erdca 40ca_rard_nmc.dat
+ 
+ sigma ehe4=sqrt((ehe4/rhe4)**2+(erdhe4/rdhe4)**2)*rhe4
+ sigma errcc=sqrt((ec12/rc12)**2+(erdc12/rdc12)**2)*rc12
+ sigma errca=sqrt((eca/rca)**2+(erdca/rdca)**2)*rca
+  
+ sigma hq=avq2kr*1.12
+ sigma nq=avq2kr*1.06
+ 
+*
+* error due to error in 1998 < 1% for 14N => can be neglected.
+*
+zone 1 2
+*
+ f/file 78 r_ratio_f2free.ps
+meta 78 -113
+*
+ 
+sk=0.05
+
+
+set asiz 0.6
+set vsiz 0.4
+
+null [sk] 40 0.0 6.0 
+*
+*set pmci 3
+ 
+gra/hplo/err qcc(1:3) rc12(1:3) error(1:3) errcc(1:3) 50 26 0.20 1 
+gra/hplo/err avqhe4(1:3) rhe4(1:3) error(1:3) ehe4(1:3) 50 28 0.20 1 
+gra/hplo/err qca(1:3) rca(1:3) error errca(1:3) 50 30 0.25 1 1
+gra/hplo/err qsn(1:3) sn(1:3) error errsn(1:3) 50 27 0.30 1 1
+set pmci 1
+ 
+ set pmci 4
+ gra/hplo/err nq(5:6) nr(5:6) error(5:6) nrfit(5:6) 50 20 0.20 1 
+ gra/hplo/aerr nq(5:6) nr(5:6) error(5:6) error(5:6) synlow(5:6) synup(5:6) 50 20 0.20 1 
+ set pmci 1
+
+ set pmci 4
+ gra/hplo/err hq(5:6) hr(2:3) error(2:3) hrfit(2:3) 50 21 0.2 1 
+ gra/hplo/aerr hq(5:6) hr(2:3) error(2:3) error(2:3) syhlow(2:3) syhup(2:3) 50 21 0.2 1 
+ set pmci 1
+ 
+ set pmci 4 
+ gra/hplo/err avq2kr(5:6) rkr(5:6) error(5:6) rfitkr(5:6) 50 22 0.20 1
+ gra/hplo/err avq2kr(5:6) rkr(5:6) error(5:6) syskr(5:6) 50 22 0.20 1
+ set pmci 1 
+* wait
+ atit ' ' '>R?A!/>R?D!'
+ set pmci 1 
+* just for legend:
+* ve/create t1(3)
+* ve/create t2(3)
+* ve/in t1 7.9 7.9 7.9
+* ve/in t2 2.8 4.4 3.2
+* gra/hplo/err t1(1) t2(1) error error 1 26 0.25 1
+* set pmci 4
+*  gra/hplo/err t1(2) t2(2) error error 1 22 0.25 1 
+*  set pmci 1
+* gra/hplo/err t1(3) t2(3) error error 1 28 0.25 1 
+  
+*
+* zone 1 5 3 s
+*
+set plci 1
+set ltyp 3
+dline [sk] 40 1.0 1.0 s
+set ltyp 1 
+* 
+ 
+**Cu Mod dep  
+set pmci 2 
+ graph/hplot/err q2cu(1:2) rcu(1:2) ? drcu(1:2) 10 20 0.2 1
+ graph/hplot/err q2cu(1:2) rcu(1:2) ? totcu(1:2) 10 20 0.2 
+set pmci 1 
+
+**C1 Mod dep 
+set pmci 2 
+ graph/hplot/err q2c1(1:1) rc1(1:1) ? drc1(1:1) 10 29 0.25 1
+ graph/hplot/err q2c1(1:1) rc1(1:1) ? totc1(1:1) 10 29 0.25 
+set pmci 1 
+
+   
+ set NDVY 10
+ zone 1 6 4 S
+ 
+ 
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* ******************************************************
+ 
+* 2nd bin
+null [sk] 40 0.0 2.5 
+*
+ 
+ gra/hplo/err qcc(4:6) rc12(4:6) error(4:6) errcc(4:6) 50 26 0.20 1 S
+ gra/hplo/err avqhe4(4:6) rhe4(4:6) error(4:6) ehe4(4:6) 50 28 0.20 1 S
+ gra/hplo/err qca(4) rca(4) error errca(4) 50 30 0.25 1 S
+ gra/hplo/err qsn(4:6) sn(4:6) error errsn(4:6) 50 27 0.30 1 
+ set pmci 1
+ 
+ set pmci 3
+ gra/hplo/err qc(1:4) c(1:4) error errc(1:4) 50 24 0.20 1 
+
+ set pmci 4
+ gra/hplo/err nq(7:9) nr(7:9) error(7:9) nrfit(7:9) 50 20 0.20 1
+ graphics/hplot/aerrors nq(7:9) nr(7:9) error(7:9) error(7:9) synlow(7:9) synup(7:9) 50 20 0.20 1
+ set pmci 1
+
+ set pmci 4
+ gra/hplo/err hq(7:9) hr(4:6) error(4:6) hrfit(4:6) 50 21 0.2 1
+ gra/hplo/aerr hq(7:9) hr(4:6) error(4:6) error(4:6) syhlow(4:6) syhup(4:6) 50 21 0.2 1
+ set pmci 1
+
+ 
+ set pmci 1 
+set plci 1
+set ltyp 3
+dline [sk] 40 1.0 1.0  
+set ltyp 1
+*
+ 
+*JLAB
+*AU
+**graph/hplot/err q2_1(6:7) rat_au(6:7) ? er_au(6:7) 100 21 0.2 1
+**graph/hplot/err q2_1(6:7) rat_au(6:7) ? ertotau(6:7) 100 21 0.2
+***CU
+***graph/hplot/err q2_2(6:7) rat_cu(6:7) ? er_cu(6:7) 100 20 0.2 1
+***graph/hplot/err q2_2(6:7) rat_cu(6:7) ? ertotcu(6:7) 100 20 0.2
+**C
+*graph/hplot/err q2_3(6:7) rat_c(6:7) ? er_c(6:7) 100 30 0.2 1
+*graph/hplot/err q2_3(6:7) rat_c(6:7) ? ertotc(6:7) 100 30 0.2
+
+
+**Cu Mod dep  
+set pmci 2 
+ graph/hplot/err q2cu(3:4) rcu(3:4) ? drcu(3:4) 10 20 0.2 1
+ graph/hplot/err q2cu(3:4) rcu(3:4) ? totcu(3:4) 10 20 0.2 
+**Cu Roz Sep  
+ graph/hplot/err q2cur(1:2) rcur(1:2) ? drcur(1:2) 10 20 0.2 1
+ graph/hplot/err q2cur(1:2) rcur(1:2) ? totcur(1:2) 10 20 0.2 
+set pmci 1 
+
+*mod dep AU
+set pmci 2
+ graph/hplot/err q2au(1:3) rau(1:3) ? drau(1:3) 10 21 0.2 1
+ graph/hplot/err q2au(1:3) rau(1:3) ? totau(1:3) 10 21 0.2 
+set pmci 1 
+
+**C1 Mod dep
+set pmci 2 
+ graph/hplot/err q2c1(2:2) rc1(2:2) ? drc1(2:2) 10 29 0.25 1
+ graph/hplot/err q2c1(2:2) rc1(2:2) ? totc1(2:2) 10 29 0.25 
+set pmci 1 
+   
+  
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* ****************************************************** 
+ 
+* 3nd bin
+null [sk] 40 0.0 1.9999
+*
+ 
+ gra/hplo/err qcc(7:9) rc12(7:9) error(7:9) errcc(7:9) 50 26 0.20 1 S
+ gra/hplo/err avqhe4(7:9) rhe4(7:9) error(7:9) ehe4(7:9) 50 28 0.20 1 S
+ gra/hplo/err qca(5) rca(5) error errca(5) 50 30 0.25 1 S
+ gra/hplo/err qsn(7:9) sn(7:9) error errsn(7:9) 50 27 0.30 1 S
+
+ set pmci 3
+ gra/hplo/err qc(4:9) c(4:9) error errc(4:9) 50 24 0.20 1 S
+ set pmci 1
+
+ set pmci 4
+ gra/hplo/err nq(10:12) nr(10:12) error(10:12) nrfit(10:12) 50 20 0.20 1
+ gra/hplo/aerr nq(10:12) nr(10:12) error(10:12) error(10:12) synlow(10:12) synup(10:12) 50 20 0.20 1
+ set pmci 1
+
+ set pmci 4
+ gra/hplo/err hq(10:12) hr(7:9) error(7:9) hrfit(7:9) 50 21 0.2 1 
+ gra/hplo/aerr hq(10:12) hr(7:9) error(7:9) error(7:9) syhlow(7:9) syhup(7:9) 50 21 0.2 1 
+ set pmci 1
+
+* gra/hplo/err avq2kr(10:12) rkr(10:12) error(10:12) rfitkr(10:12) 50 22 0.20 1 
+* gra/hplo/err avq2kr(10:12) rkr(10:12) error(10:12) syskr(10:12) 50 22 0.20 1 
+ set pmci 1 
+set plci 1
+set ltyp 3
+dline [sk] 40 1.0 1.0 
+set ltyp 1
+*
+
+*JLAB
+*AU
+**graph/hplot/err q2_1(8:12) rat_au(8:12) ? er_au(8:12) 100 21 0.2 1
+**graph/hplot/err q2_1(8:12) rat_au(8:12) ? ertotau(8:12) 100 21 0.2
+***CU
+***graph/hplot/err q2_2(8:12) rat_cu(8:12) ? er_cu(8:12) 100 20 0.2 1
+***graph/hplot/err q2_2(8:12) rat_cu(8:12) ? ertotcu(8:12) 100 20 0.2
+*C
+**graph/hplot/err q2_3(8:12) rat_c(8:12) ? er_c(8:12) 100 30 0.2 1
+**graph/hplot/err q2_3(8:12) rat_c(8:12) ? ertotc(8:12) 100 30 0.2
+
+**Cu Mod dep  
+set pmci 2 
+ graph/hplot/err q2cu(5:7) rcu(5:7) ? drcu(5:7) 10 20 0.2 1
+ graph/hplot/err q2cu(5:7) rcu(5:7) ? totcu(5:7) 10 20 0.2 
+**Cu Roz Sep
+ graph/hplot/err q2cur(3:5) rcur(3:5) ? drcur(3:5) 10 20 0.2 1
+ graph/hplot/err q2cur(3:5) rcur(3:5) ? totcur(3:5) 10 20 0.2 
+set pmci 1 
+
+*mod dep AU
+set pmci 2
+ graph/hplot/err q2au(4:5) rau(4:5) ? drau(4:5) 10 21 0.2 1
+ graph/hplot/err q2au(4:5) rau(4:5) ? totau(4:5) 10 21 0.2 
+set pmci 1 
+
+**C1 Mod dep
+set pmci 2 
+ graph/hplot/err q2c1(3:5) rc1(3:5) ? drc1(3:5) 10 29 0.25 1
+ graph/hplot/err q2c1(3:5) rc1(3:5) ? totc1(3:5) 10 29 0.25 
+set pmci 1 
+
+  
+ 
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* ******************************************************
+* ******************************************************
+
+* 4th bin
+set yval 0.15
+ 
+null [sk] 40 0.0 1.99999
+*
+ gra/hplo/err qcc(10:12) rc12(10:12) error(10:12) errcc(10:12) 50 26 0.20 1 S
+ gra/hplo/err avqhe4(10:10) rhe4(10:10) error(10:10) ehe4(10:10) 50 28 0.20 1 S
+* set pmci 2
+* gra/hplo/err qfe fe error errfe 50 25 0.20 1 S
+ set pmci 1
+ gra/hplo/err qca(6) rca(6) error errca(6) 50 30 0.25 1 S
+ 
+ set pmci 3
+ gra/hplo/err qfe fe error errfe 50 31 0.30 1 S
+  
+ set pmci 3
+ gra/hplo/err qau au error errau 50 29 0.30 1 S
+ set pmci 1
+ gra/hplo/err qca(6) rca(6) error errca(6) 50 30 0.25 1 S
+ 
+ set pmci 4
+ gra/hplo/err nq(13:16) nr(13:16) error(13:16) nrfit(13:16) 50 20 0.20 1
+ gra/hplo/aerr nq(13:16) nr(13:16) error(13:16) error(13:16) synlow(13:16) synup(13:16) 50 20 0.20 1
+ set pmci 1
+
+ set pmci 4
+ gra/hplo/err hq(13:16) hr(10:12) error(10:12) hrfit(10:12) 50 21 0.2 1
+ gra/hplo/aerr hq(13:16) hr(10:12) error(10:12) error(10:12) syhlow(10:12) syhup(10:12) 50 21 0.2 1
+ set pmci 1
+
+* gra/hplo/err avq2kr(13:14) rkr(13:14) error(13:14) rfitkr(13:14) 50 22 0.20 1 
+* gra/hplo/err avq2kr(13:14) rkr(13:14) error(13:14) syskr(13:14) 50 22 0.20 1 
+ set pmci 1 
+
+*JLAB
+*AU
+**graph/hplot/err q2_1(13:16) rat_au(13:16) ? er_au(13:16) 100 20 0.2 1
+**graph/hplot/err q2_1(13:16) rat_au(13:16) ? ertotau(13:16) 100 20 0.2
+***CU
+***graph/hplot/err q2_2(13:16) rat_cu(13:16) ? er_cu(13:16) 100 20 0.2 1
+***graph/hplot/err q2_2(13:16) rat_cu(13:16) ? ertotcu(13:16) 100 20 0.2
+**C
+*graph/hplot/err q2_3(13:16) rat_c(13:16) ? er_c(13:16) 100 20 0.2 1
+*graph/hplot/err q2_3(13:16) rat_c(13:16) ? ertotc(13:16) 100 20 0.2
+
+**Cu Mod dep  
+set pmci 2 
+ graph/hplot/err q2cu(8:10) rcu(8:10) ? drcu(8:10) 10 20 0.2 1
+ graph/hplot/err q2cu(8:10) rcu(8:10) ? totcu(8:10) 10 20 0.2 
+**Cu Roz Sep
+ graph/hplot/err q2cur(6:9) rcur(6:9) ? drcur(6:9) 10 20 0.2 1
+ graph/hplot/err q2cur(6:9) rcur(6:9) ? totcur(6:9) 10 20 0.2 
+set pmci 1 
+
+*mod dep AU
+set pmci 2
+ graph/hplot/err q2au(6:9) rau(6:9) ? drau(6:9) 10 21 0.2 1
+ graph/hplot/err q2au(6:9) rau(6:9) ? totau(6:9) 10 21 0.2 
+*ros sep AU
+ graph/hplot/err q2aur raur ? draur  10 21 0.2 1
+ graph/hplot/err q2aur raur ? totaur 10 21 0.2 
+set pmci 1 
+
+**C1 Mod dep
+set pmci 2 
+ graph/hplot/err q2c1(6:6) rc1(6:6) ? drc1(6:6) 10 29 0.25 1
+ graph/hplot/err q2c1(6:6) rc1(6:6) ? totc1(6:6) 10 29 0.25 
+set pmci 1 
+
+**C1 Roz Sep
+set pmci 2 
+ graph/hplot/err q2c1r rc1r ? drc1r 10 29 0.25 1
+ graph/hplot/err q2c1r rc1r ? totc1r 10 29 0.25 
+set pmci 1 
+ 
+ 
+*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+* 
+set plci 1
+set ltyp 3
+dline [sk] 40 1.0 1.0
+set yval 300
+set ltyp 1 
+
+set asiz 0.5
+set ylab 1.4
+ atit 'Q^2! (GeV/c)^2!'
+* 
+*
+*
+null 0. 4. 0. 1. SAB
+set plci 1
+
+*set txci 1
+* 
+* itx 0.0013 3.75 '>R?A!' 
+* dline 0.0013 0.0017 3.7 3.7
+* itx 0.0013 3.6 '>R?D! ' 
+*
+  
+* itx 0.9 -0.6 'Q^ 2! (GeV^ 2!)'
+ goto next
+ igset chhe 0.4
+*itx 0.0032 5.98 '9'
+*itx 0.0032 5.64 '8'
+*itx 0.0032 5.30 '7'
+*itx 0.0032 4.97 '6'
+*itx 0.0032 4.65 '5'
+*itx 0.0032 4.31 '4'
+*itx 0.0032 3.97 '3' 
+*itx 0.0032 3.63 '2'
+*itx 0.0032 3.29 '1'
+*itx 0.0028 2.68 '1.5'
+*itx 0.0032 2.35 '1'
+*itx 0.0028 2.22 '0.5'
+*itx 0.0032 2.0 '0'
+*itx 0.0032 1.85 '2'
+*itx 0.0032 1.45 '1'
+*itx 0.0032 1.0 '0'
+*itx 0.0032 0.85 '2'
+*itx 0.0032 0.32 '1'
+*itx 0.0032 0.0 '0'
+ next:
+  
+* 
+*
+*itx 0.004 -0.15 '0.4'
+*itx 0.0145 -0.15 '1'
+*itx 0.45 -0.15 '10'
+*itx 3.0 -0.15 '40'
+*
+ 
+ igset chhe 0.3
+ set pmci 4
+ graph/hplot/key 0.7 5.2 22 'HERMES(K<r>/D)'
+ graph/hplot/key 0.7 5.0 20 'HERMES(N/D)'
+ graph/hplot/key 0.7 4.8 21 'HERMES(^3!H<e>/D)'
+ set pmci 1
+ graph/hplot/key 0.7 4.6 28 'NMC(C/D)'
+ graph/hplot/key 0.7 4.4 26 'NMC(^4!H<e>/D)'
+ graph/hplot/key 0.7 4.2 27 'NMC(S<n>/D)'
+ graph/hplot/key 0.7 4.0  30 'NMC(C<a>/D)'
+ set pmci 3
+ graph/hplot/key 0.7 3.8 24 'SLAC(C/D)' 
+ graph/hplot/key 0.7 3.6 31 'SLAC(F<e>/D)'
+ graph/hplot/key 0.7 3.4 29 'SLAC(A<u>/D)'
+ set pmci 2
+ graph/hplot/key 0.7 5.80 29 'JLAB(C/D)' 
+ graph/hplot/key 0.7 5.6 20 'JLAB(C<u>/D)' 
+ graph/hplot/key 0.7 5.4 21 'JLAB(A<u>/D)' 
+ 
+set txci 1
+ itx 0.005 0.15 '0.15 >"L#< x >"L#! 0.8'
+ itx 0.005 1.15 ' 0.06 >"L#< x >"L#! 0.15'
+ itx 0.005 2.15 ' 0.03 >"L#< x >"L#! 0.06'
+ itx 0.005 5.55 ' 0.01 >"L#< x >"L#! 0.03'
+mess here
+ *
+close 78
+  
+return
+ 

@@ -1,0 +1,9 @@
+* x=0.6
+* JLab e03103 eratio = stat and sys in quadrature
+* A	ratio    eratio    norm 
+3	0.9644	0.011	0.0184
+4	0.9491	0.011	0.0150
+9	0.9403	0.011	0.0170
+12	0.9274	0.011	0.0160
+
+

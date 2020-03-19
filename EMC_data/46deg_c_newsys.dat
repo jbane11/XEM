@@ -1,0 +1,43 @@
+** C/D --> sigA/sigD for JLAB experiment 03103.
+** Beam energy = 5.011 GeV, Scattering angle= 46.0 degrees
+** There is an overall 1.6% fractional normalization error not listed in the table below.
+** Ratios already include isoscalar correction (correction applied in "Iso" column) and 
+** Coulomb corrections. Either correction can be removed by, for example, 
+** dividing Ratio/(Iso. corr.)
+***********************************************************************************************
+** Information in each column:
+** x: Bjorken x
+** xi: Nachtmann scaling variable, xi = 2x/(1+sqrt(1+4mp**2x**2/Q2)
+** Q2 in GeV**2
+** W2 in GeV**2
+** Ratio: sigA/sigD all corrections (including Coulomb corrections and isocsalar corrections) 
+**        applied
+** Stat: statistical error (absolute)
+** Sys : point-to-point systematic error (absolute): this should be combined in quadrature with
+**       the statistical error
+** Sys-xcorr : systematic error due to radiated quasielastic tail. This uncertainty is
+**             correlated, so affects all x-bins collectively. 
+** Iso. corr.: Isoscalar correction: = 0.5*A*(1+Sig_n/Sig_p)/(Z+N*Sig_n/Sig_p)
+** Coul. Corr.: Coulomb correction factor to account for acceleration (deceleration) of 
+**   incoming (outgoing) electron due to nuclear Coulomb field. 
+**   See Aste et al, Eur. Phys. Jour A26, 167 (2005). Note we use 75% of the electrostatic
+**   potential at the center of the nucleus and use (Z-1) so that for Z=1 nuclei, there is
+**   no Coulomb correction.  
+**  x       xi       Q2       W2      Ratio       Stat          Sys     Sys-xcorr   Iso. corr.  Coul. corr
+ 0.5250   0.4947   3.7345   4.2592  0.9598E+00  0.6872E-02  0.1033E-01  0.2606E-02  0.1000E+01  0.1009E+01
+ 0.5500   0.5166   3.8675   4.0446  0.9533E+00  0.7208E-02  0.1044E-01  0.1726E-02  0.1000E+01  0.1010E+01
+ 0.5750   0.5383   3.9974   3.8350  0.9466E+00  0.6525E-02  0.1047E-01  0.8565E-03  0.1000E+01  0.1010E+01
+ 0.6000   0.5599   4.1245   3.6300  0.9433E+00  0.8030E-02  0.1047E-01  0.0000E+00  0.1000E+01  0.1011E+01
+ 0.6250   0.5812   4.2487   3.4296  0.9307E+00  0.6458E-02  0.1033E-01  0.0000E+00  0.1000E+01  0.1011E+01
+ 0.6500   0.6025   4.3702   3.2336  0.9147E+00  0.6036E-02  0.1015E-01  0.0000E+00  0.1000E+01  0.1012E+01
+ 0.6750   0.6235   4.4891   3.0418  0.9058E+00  0.6280E-02  0.1005E-01  0.0000E+00  0.1000E+01  0.1012E+01
+ 0.7000   0.6444   4.6054   2.8541  0.8992E+00  0.8081E-02  0.9978E-02  0.0000E+00  0.1000E+01  0.1013E+01
+ 0.7250   0.6652   4.7193   2.6704  0.9076E+00  0.8696E-02  0.1007E-01  0.0000E+00  0.1000E+01  0.1013E+01
+ 0.7500   0.6857   4.8308   2.4906  0.9143E+00  0.7685E-02  0.1015E-01  0.0000E+00  0.1000E+01  0.1014E+01
+ 0.7750   0.7061   4.9399   2.3145  0.9267E+00  0.1058E-01  0.1029E-01  0.0000E+00  0.1000E+01  0.1015E+01
+ 0.8000   0.7264   5.0468   2.1421  0.9378E+00  0.6512E-02  0.1040E-01  0.0000E+00  0.1000E+01  0.1016E+01
+ 0.8250   0.7464   5.1516   1.9731  0.9827E+00  0.8148E-02  0.1090E-01  0.0000E+00  0.1000E+01  0.1017E+01
+ 0.8500   0.7664   5.2542   1.8076  0.1038E+01  0.1470E-01  0.1155E-01  0.0000E+00  0.1000E+01  0.1018E+01
+ 0.8750   0.7861   5.3547   1.6453  0.1133E+01  0.1225E-01  0.1259E-01  0.0000E+00  0.1000E+01  0.1017E+01
+ 0.9000   0.8057   5.4533   1.4863  0.1129E+01  0.1350E-01  0.1253E-01  0.0000E+00  0.1000E+01  0.1017E+01
+ 0.9250   0.8251   5.5500   1.3304  0.1175E+01  0.1580E-01  0.1305E-01  0.0000E+00  0.1000E+01  0.1018E+01

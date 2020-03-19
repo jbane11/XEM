@@ -1,0 +1,69 @@
+ macro plot_e139
+   
+   ve/del *
+   
+   a=[1]
+   
+   ve/read x,he4,ehe4,be,ebe,c12,ec12,al,eal,ca,eca,fe,efe,ag,eag,au,eau slac_e139_data_coarse.dat ! ! -/**/
+   
+   np = $vlen(x,1)
+   ve/create ex([np])
+   
+   
+   set pmci 1
+   set hcol 1
+   
+   mtyp=5
+   size=0.25
+   
+   if [a]=4 then
+     sigma rat=he4
+     sigma etot = ehe4
+     graph/hplot/err x he4 ex ehe4 [np] [mtyp] [size] s
+   endif
+   
+   if [a]=9 then
+     sigma rat=be
+     sigma etot = ebe
+     graph/hplot/err x be ex ebe [np] [mtyp] [size] s
+   endif
+   
+   if [a]=12 then
+     sigma rat=c12
+     sigma etot = ec12
+     graph/hplot/err x c12 ex ec12 [np] [mtyp] [size] s
+   endif
+   
+   if [a]=27 then
+     sigma rat=al
+     sigma etot = eal
+     graph/hplot/err x al ex eal [np] [mtyp] [size] s
+   endif
+   
+   if [a]=40 then
+     sigma rat=ca
+     sigma etot = eca
+     graph/hplot/err x ca ex eca [np] [mtyp] [size] s
+   endif
+   
+   if [a]=56 then
+     sigma rat=fe
+     sigma etot = efe
+     graph/hplot/err x fe ex efe [np] [mtyp] [size] s
+   endif
+   
+   if [a]=108 then
+     sigma rat=ag
+     sigma etot = eag
+     graph/hplot/err x ag ex eag [np] [mtyp] [size] s
+   endif
+   
+   if [a]=197 then
+     sigma rat=au
+     sigma etot = eau
+     graph/hplot/err x au ex eau [np] [mtyp] [size] s
+   endif
+
+
+   
+   

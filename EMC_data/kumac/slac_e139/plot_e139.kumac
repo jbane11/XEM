@@ -1,0 +1,145 @@
+ macro plot_e139
+   
+   ve/del *
+   
+   exe ~/hallc#setup
+   set ysiz 20
+   set xwin 0.000001
+   set ywin 0.000001
+   set vsiz 0.4
+   set lwid 3
+
+   zone 2 4
+   
+   xmin=0
+   xmax=0.9
+   
+   ymin=0.75
+   ymax=1.2
+   
+   ve/read x,he4,ehe4,be,ebe,c12,ec12,al,eal,ca,eca,fe,efe,ag,eag,au,eau slac_e139_data.dat ! ! -/**/
+   
+   np = $vlen(x,1)
+   ve/create ex([np])
+   
+   
+   set pmci 4
+   set hcol 4
+   
+   null [xmin] [xmax] [ymin] [ymax] a
+   set ltyp 2
+   set plci 2
+   line [xmin] 1 [xmax] 1
+   set plci 1
+   set ltyp 1
+   graph/hplot/err x he4 ex ehe4 [np] 20 0.15 s
+   axis [xmin] [xmax] [ymin] [ymin] [xmin] [xmax] 210 u
+   set lasi 0.04
+   axis [xmin] [xmin] [ymin] [ymax] [ymin] [ymax] 505 h
+   null 0 1 0 1 as
+   itx 0.1 0.2 '^4!He'
+   atit ! '([s]^A!/[s]^D!)?IS!'
+   
+   null [xmin] [xmax] [ymin] [ymax] a
+   set ltyp 2
+   set plci 2
+   line [xmin] 1 [xmax] 1
+   set plci 1
+* line [xmin] 1 [xmax] 1
+   set ltyp 1
+   graph/hplot/err x be ex ebe [np] 20 0.15 s
+   axis [xmin] [xmax] [ymin] [ymin] [xmin] [xmax] 210 u
+   axis [xmin] [xmin] [ymin] [ymax] [ymin] [ymax] 505 u
+   null 0 1 0 1 as
+   itx 0.1 0.2 'Be'
+   
+   
+   null [xmin] [xmax] [ymin] [ymax] a
+   set ltyp 2
+   set plci 2
+   line [xmin] 1 [xmax] 1
+   set plci 1
+* line [xmin] 1 [xmax] 1
+   set ltyp 1
+   graph/hplot/err x c12 ex ec12 [np] 20 0.15 s
+   axis [xmin] [xmax] [ymin] [ymin] [xmin] [xmax] 210 u
+   set lasi 0.04 
+   axis [xmin] [xmin] [ymin] [ymax] [ymin] [ymax] 505 h
+   null 0 1 0 1 as
+   itx 0.1 0.2 'C'
+   
+   null [xmin] [xmax] [ymin] [ymax] a
+   set ltyp 2
+   set plci 2
+   line [xmin] 1 [xmax] 1
+   set plci 1
+* line [xmin] 1 [xmax] 1
+   set ltyp 1
+   graph/hplot/err x al ex eal [np] 20 0.15 s
+   axis [xmin] [xmax] [ymin] [ymin] [xmin] [xmax] 210 u
+   axis [xmin] [xmin] [ymin] [ymax] [ymin] [ymax] 505 u
+   null 0 1 0 1 as
+   itx 0.1 0.2 'Al'
+   
+   
+   null [xmin] [xmax] [ymin] [ymax] a
+   set ltyp 2
+   set plci 2
+   line [xmin] 1 [xmax] 1
+   set plci 1
+* line [xmin] 1 [xmax] 1
+   set ltyp 1
+   graph/hplot/err x ca ex eca [np] 20 0.15 s
+   axis [xmin] [xmax] [ymin] [ymin] [xmin] [xmax] 210 u
+   set lasi 0.04
+   axis [xmin] [xmin] [ymin] [ymax] [ymin] [ymax] 505 h
+   null 0 1 0 1 as
+   itx 0.1 0.2 'Ca'
+   
+   null [xmin] [xmax] [ymin] [ymax] a
+   set ltyp 2
+   set plci 2
+   line [xmin] 1 [xmax] 1
+   set plci 1
+* line [xmin] 1 [xmax] 1
+   set ltyp 1
+   graph/hplot/err x fe ex efe [np] 20 0.15 s
+   axis [xmin] [xmax] [ymin] [ymin] [xmin] [xmax] 210 u
+   axis [xmin] [xmin] [ymin] [ymax] [ymin] [ymax] 505 u
+   null 0 1 0 1 as
+   itx 0.1 0.2 'Fe'
+   
+   null [xmin] [xmax] [ymin] [ymax] a
+   set ltyp 2
+   set plci 2
+   line [xmin] 1 [xmax] 1
+   set plci 1
+* line [xmin] 1 [xmax] 1
+   set ltyp 1
+   graph/hplot/err x ag ex eag [np] 20 0.15 s
+   set lasi 0.04
+   axis [xmin] [xmax] [ymin] [ymin] [xmin] [xmax] 505 h
+   set lasi 0.04
+   axis [xmin] [xmin] [ymin] [ymax] [ymin] [ymax] 505 h
+   null 0 1 0 1 as
+   itx 0.1 0.2 'Ag'
+   
+   null [xmin] [xmax] [ymin] [ymax] a
+   set ltyp 2
+   set plci 2
+   line [xmin] 1 [xmax] 1
+   set plci 1
+* line [xmin] 1 [xmax] 1
+   set ltyp 1
+   graph/hplot/err x au ex eau [np] 20 0.15 s
+   wmax = [xmax]-0.1
+   set lasi 0.04
+   axis [xmin] [xmax] [ymin] [ymin] [xmin] [xmax] 505 h
+   axis [xmin] [xmin] [ymin] [ymax] [ymin] [ymax] 505 u
+   null 0 1 0 1 as
+   itx 0.1 0.2 'Au'
+   
+   atit 'x?Bj!' 
+
+   
+   

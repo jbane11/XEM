@@ -1,0 +1,114 @@
+* Reset all plotting options to default values
+
+graphics/set *; opt *; title; title ! U
+
+* Set ZFL option to enable screen capture at the end
+
+graphics/opt zfl
+
+* Set polymarker styles for the two data sets, and set polymarker size
+* (NOTE: use different symbols, so that black & white versions are readable!)
+
+dot = 25
+dotsize = 0.3
+
+* Prepare axes
+
+* ... graphics/set font, font size, and colour for axis values
+*graphics/set vfon -66
+*graphics/set vsiz 0.5
+graphics/set xcol 1
+graphics/set ycol 1
+ graphics/set gsiz 0.5
+ graphics/set gfon -66
+ graphics/set ygti 1.2
+ 
+* ... increase line width for axis box, and x,y tick marks
+graphics/set bwid 3
+graphics/set xwid 3
+graphics/set ywid 3
+
+* ... add space between axes and axis values (default 0.4)
+* ... --> logarithmic scales (especially vertical) require extra space
+graphics/set xval 0.4
+graphics/set yval 0.4 
+
+* ... add space to left and bottom margins, to accomodate large axis labels
+graphics/set xmgl 3
+graphics/set ymgl 3
+
+* ... set axis divisions: n1 + 100*n2 + 10000*n3  (default = 10510)
+* ... where n1 = # primary axis divisions, n2 = # secondary, etc
+* ... Note: negative number --> force exact number of divisions
+graphics/set ndvy 105 
+graphics/set ndvx 5
+
+* ... establish null frame for plot
+graphics/opt nbox
+ 
+* Plot data
+
+* ... increase thickness of error bars and outline of open symbols
+graphics/set hwid 4
+
+
+* Write axis labels
+
+* ... set font, font size, and colour for labels
+*graphics/set lfon -66
+graphics/set asiz 0.6
+graphics/set txci 1
+
+* ... space the labels away from the axes
+* ... --> logarithmic scales require a little extra space
+graphics/set xlab 2.0
+graphics/set ylab 1.
+
+
+* Theoretical prediction
+
+* ... set line type, width, and fill area colour for function 
+ graphics/set dmod 1
+ graphics/set fwid 6 
+ graphics/set fcol 4
+
+* lets plot systematic error
+
+* graphics/set htyp -3
+
+* Set font, font size, and alignment for ITX text
+
+*graphics/set txfp -66
+graphics/set chhe 0.5
+graphics/set txal 13
+
+* First line: Write HERMES PRELIMINARY with data symbol
+
+ * ... draw the polymarker corresponding to the data
+* ypos = 0.93
+* v/create x(1) R 0.25
+* v/create y(1) R [ypos]
+ graphics/set mtyp [dot]
+graphics/set mscf 2.0
+* pmarker 1 x y 
+
+* ... write each word with different colour
+graphics/set txci 1
+* itx  .3  [ypos] 'HERMES' 
+graphics/set txci 2
+* itx .52 [ypos] 'PRELIMINARY'
+graphics/set txci 1
+* ========================================================================
+* CAPTURE THE PICTURE TO POSTSCRIPT FILE AND MAKE EPS VERSION
+* ========================================================================
+
+* filebase = example-lambda
+* pi/pri [filebase].ps
+
+* Generate eps file using ps2epsi utility.
+* NOTE: Using PAW to make eps files via pi/pri example-lambda.eps (or any
+*	other method) does NOT produce a proper bounding box! DO NOT USE.
+
+* shell ps2epsi [filebase].ps [filebase].eps
+
+

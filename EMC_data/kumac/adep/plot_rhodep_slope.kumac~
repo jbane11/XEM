@@ -1,0 +1,71 @@
+ macro plot_adep_x0p6
+   exe ~/hallc#setup
+   set *fon 66
+   set csiz 0.4
+   opt linx
+   
+   ve/del *
+   
+   ve/read as,rats,erats,norms,deuts adep_x0p6_slac.dat ! ! -/*/
+   nps=$vlen(as,1)
+   sigma etots=sqrt(erats**2+(norms*rats)**2 + (deuts*rats)**2)
+   ve/cr rhos([nps]) r 0.024 0.089 0.062 0.089 0.106 0.105 0.117 0.126 0.147
+   sigma rhoss=rhos-0.001
+   
+   
+   ve/read ax,ratx,eratx,normx adep_x0p6_xem.dat ! ! -/*/
+   npx=$vlen(ax,1)
+   sigma etotx=sqrt(eratx**2+(normx*ratx)**2)
+   ve/cr rhox([npx]) r 0.044 0.089 0.062 0.089
+   sigma rhoxs=rhox+0.001
+   
+   null 0 0.18 0.8 1.05
+   
+   ve/cr ex(100) r
+   
+   set hcol 2
+   set pmci 2
+   hplot/err rhoss(2:[nps]) rats(2:[nps]) ex(2:[nps]) etots(2:[nps]) [nps] 22 0.2 s
+   hplot/err rhos(1:1) rats(1:1) ex(1:1) etots(1:1) [nps] 26 0.2 s
+   
+   set hcol 4
+   set pmci 4
+   hplot/err rhoxs ratx ex etotx [npx] 20 0.2 s
+   
+   itx 0.15 0.95 'x=0.6'
+   
+   set ltyp 2
+   dline 0 0.18 1 1 
+   set ltyp 1
+   
+   atit '[r] (nucleons/fm^3!)' '[s]?A!/[s]?D!'
+   
+   set pmci 2
+   key 2 0.85 22 'SLAC E139'
+   set pmci 4
+   key 2 0.83 20 'JLab E03103'
+   
+   ntot=[nps]+[npx]
+   ve/cr rhot([ntot]) r
+   ve/cr ratt([ntot]) r
+   ve/cr eratt([ntot]) r
+   
+   ve/copy rhos rhot(1:[nps])
+   ve/copy rats ratt(1:[nps])
+   ve/copy etots eratt(1:[nps])
+   
+   nx=[nps]+1
+   ve/copy rhox rhot([nx]:[ntot])
+   ve/copy ratx ratt([nx]:[ntot])
+   ve/copy etotx eratt([nx]:[ntot])
+   
+* v/create par(2) r 1.008 -0.034
+   ve/cr par(2) r 1 1
+   v/fit rhot ratt eratt p1 s 2 par 
+   
+   p1=par(1)
+   p2=par(2)
+   set hcol 1
+   fun/plo ([p1])+x*([p2]) 0 0.18 sL
+   
+   pic/print rhodep_x0p6.eps

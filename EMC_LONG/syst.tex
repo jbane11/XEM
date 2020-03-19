@@ -1,0 +1,163 @@
+\section{Systematic uncertainties}\label{syst.sec}
+%{\color{blue}{discussion, not sure whether we want to include big table with details or a smaller version of the table which summarizes the errors, CHECK ALL NUMBERS CAREFULLY}}
+% see syst.041311.tex in this dir for the big table
+%{\color{blue}{ CHECK ALL NUMBERS CAREFULLY}}
+
+Statistical uncertainties arise from the random variation in the various
+yields used to compute the cross sections. The total systematic uncertainty in
+the cross section extraction is taken as the sum in quadrature of all
+systematic uncertainties of the quantities that contribute to the cross
+section. The components of the systematic uncertainty can be broadly divided
+into two groups: point-to-point uncertainties and normalization uncertainties.
+Point-to-point uncertainties are due to effects which may vary with time,
+kinematic conditions, or detector location, and so their effect is 
+(or at least can be) uncorrelated between different data points. Normalization
+(scale) uncertainties affect the measurement globally (e.g., target
+thickness).  Most corrections involve a mixture of point-to-point and
+normalization uncertainties. The resulting overall uncertainty in the cross
+section ratios is less than the total uncertainty in the cross section itself
+because the many of the scale uncertainties and some point-to-point type
+errors cancel in the ratios. Table~{\ref{syst_short_table} -- summarizes the
+systematic uncertainties in extracting cross section ratios. The dominant
+remaining contributions from the scale uncertainties are those associated with
+the absolute target thicknesses, radiative and background corrections.  These
+range from 1.5--2.0\% on the EMC ratios, and are provided for each target
+ratio in the supplementary data tables~\cite{online_material}. Individual
+contributions are discussed below.
+
+Possible offsets in the beam energy, spectrometer momentum, and spectrometer
+angle can yield errors in our extracted cross sections. The uncertainties
+associated with these quantities are determined by calculating the cross
+section at nominal kinematics, and comparing this to the cross section when
+each of the kinematic variables are shifted by the uncertainty of that
+variable. We use our model cross section for these studies. Note that the
+kinematic uncertainties almost completely cancel in the cross section ratios.
+
+The point-to-point uncertainty in beam charge measurement was estimated to
+be $0.5\%$. This was obtained by studying the residuals of the measured
+currents during the calibration procedure, mainly due to small drifts of the
+BCM gain.  A scale uncertainty of $0.2\%$ was assumed for the charge measured,
+due to the UNSER calibration.
+
+%(Aji: looked at the impact of target purity and found that these are negligible for the EMC ratios ).
+
+As mentioned in section~\ref{target.ssec}, thicknesses of the solid targets
+were calculated using measurements of the mass and area of the targets.
+Thicknesses of the cryotargets were computed from the target density and the
+length of the cryogen in the path of the beam. The absolute uncertainty in the
+$^2$H thickness is estimated to be 1.29\%. The normalization uncertainty due
+to target thickness for the A/D cross section ratios are found to be $1.59\%$
+and $1.23\%$ for the $^3$He and $^4$He targets respectively. For heavy nuclei,
+this scale uncertainty is found to be between 0.5\% to 1\% for the target
+ratios.  In addition to the nominal target densities, there are corrections 
+associated with beam heating effects and fluctuations in the pressure and
+temperature. The uncertainty associated with this correction comes from the
+uncertainties in the fits to target luminosity scans. Though no boiling
+correction is made in the case of the deuterium target, the uncertainty
+arising due to boiling of this correction are still included in A/D ratios
+for solid targets.  We assign a scale uncertainty of $0.24\% - 0.38\%$ for
+the target ratios.
+
+The scale uncertainty of the acceptance correction in the HMS was estimated to
+be $1\%$ from the elastic cross section studies. This is a combination of the
+uncertainties from the effect of position uncertainties in the target,
+collimator, magnets, and detector package on the acceptance correction. The 
+point-to-point uncertainty comes from comparison of model in the inelastic
+region (where the cross sections does not vary significantly) to data, and is
+estimated to be $1\%$. For the target ratios, the point-to-point uncertainty
+was estimated to be $0.3\%$. For the cryotarget ratios, the scale uncertainty
+was estimated to be $0.2\%$ and for solid target ratios this is estimated to
+be $0.5\%$. This difference occurs because part of the effect cancels in
+the cryotarget ratios.
+
+The normalization uncertainty of the tracking efficiency is determined to be
+$0.7\%$, mainly due to the limitations of the algorithm used for tracking.
+Also a point-to-point uncertainty of $0.3\%$ is assigned to the tracking
+efficiency in the target ratios.
+
+%  [JRA: if it's really a 0.05%, then it's negligible in the scale.  Skip
+%   text, since as long as table is OK, this level of detail doesn't matter
+%
+%Though the trigger efficiency was better than 0.992, a scale uncertainty of
+%$0.05\%$ is assigned to account for the possible limitation of the trigger;
+%Aji: Dave's table had 0 for A/D.
+%
+%(We assign a scale uncertainty of $0.06\%$ to the electronic dead time, mainly
+%from the deviation of the measured value of $\tau$ from the expected value of
+%60 ns; Aji: Dave's table had 0 for A/D). The point-to-point uncertainty in
+%computer dead time depends on the trigger set up, $\pi/e$ ratio, etc. and is
+%estimated to be $0.3\%$.
+
+At very low $x$ values, the structure functions are expected to scale, and any
+deviation is possibly due to the charge symmetric background (since this is
+the dominant uncertainty for heavy nuclei at small $x$ and large scattering
+angles). A comparison of 40 and 50 degree data suggests that scaling is
+satisfied if the CSB varies by no more than $5\%$. A polynomial fit was made
+to the charge symmetric background as a function of $x$, and $5\%$ of the
+magnitude of the charge symmetric background is applied as the point-to-point
+uncertainty in the charge symmetric background subtraction.
+
+The uncertainty due to the model dependence in the radiative correction was
+studied by varying the DIS and QE models independently. The change in cross
+section was most pronounced in the low $x$ region ($x<0.4$). The relative
+uncertainty in the cross section from the model dependence is estimated to be
+$1\%$. For the helium target ratios, the point-to-point uncertainty is
+estimated to be $0.5\%$ and we assign a scale uncertainty of $0.1\%$ due to
+the difference in radiation length of the helium and deuterium targets. For
+nuclei with $A>5$, the point-to-point uncertainty in the cross section ratios
+is estimated to be $0.5\%$. Also a scale uncertainty of $1\%$ is assigned to
+the cross section ratios of nuclei with large radiation length.
+
+The effect of the model on the bin centering corrections was studied by
+varying the shape of the model. This is done by supplying artificial $x$ and
+$Q^2$ dependence as input to the individual DIS and QE pieces in the model
+cross section. The variation was found to be most pronounced for the $x>$0.8
+region, and we estimate a point-to-point uncertainty of $0.2\%$ for the
+cross sections, and $0.1\%$ for the cross section ratios.
+
+Uncertainties in the Coulomb corrections is mainly due to the knowledge of
+the energy shift, $\Delta E$, used in the EMA calculation. We estimate this to
+be known at the $10\%$ level. For the Au target at 40 degrees, this
+uncertainty ranged from $0.5\%$ at low $x$ to $1.5\%$ at high $x$.
+
+\begin{table}[htb]
+% \begin{center}
+\caption[]{Table shows the typical sources and magnitude of the systematic
+uncertainties in extracting cross section ratios. These are added in
+quadrature with the statistical uncertainties to get the total random
+uncertainties.}
+    \begin{tabular}{lcc}
+	 \hline
+	 \hline
+	 Item & Absolute & $\delta R/R$ ($\pm$\%) \\
+       & uncertainty($\pm$) &        \\
+	 \hline
+Beam Energy (offset)    & 5$\times$10$^{-4}$ 	& --   \\
+Beam Energy (tgt-dep)	& 2$\times$10$^{-4}$ 	& 0.08    \\
+HMS Momentum (offset)  	& 5$\times$10$^{-4}$ 	& --  \\
+HMS Momentum (tgt-dep) 	& 2$\times$10$^{-4}$ 	& 0.0-0.12  \\
+HMS angle (offset)   	& 0.5 mrad      	& -- \\
+HMS angle (tgt-dep)	& 0.2 mrad		& 0.29-0.60 \\
+Beam Charge       	& 0.5\%       	& 0.31 \\
+Target Boiling     	& 0.45\%       	& 0.0-0.1 \\
+End-cap Subtraction   	& 2--3\%       	& 0.28-0.45 \\
+Acceptance       	& 1\%        	& 0.3 \\
+Tracking Efficiency   	& 0.7\%       	& 0.3 \\
+Trigger Efficiency   	& 0.3\%       	& 0.0 \\
+Electronic Dead Time  	& 0.06\%       	& 0.0 \\
+Computer Dead Time   	& 0.3\%       	& 0.3 \\
+Charge Symmetric BG   	&          	& 0.0-1.0 \\ 
+Coulomb corrections   	& 0.2\%       	& 0.1 \\
+Pion Contamination   	& 0.2\%       	& 0.1 \\
+Detector Efficiency   	& 0.2\%       	& 0.0 \\
+Radiative Corrections  	& 1\%        	& 0.5 \\
+Bin-centering      	& 0.2\%       	& 0.1 \\
+    
+\hline
+\hline
+    \end{tabular}
+% \end{center}
+ \label{syst_short_table}
+\end{table}
+
+
